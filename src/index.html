@@ -330,6 +330,36 @@
       transform: scale(1.05);
       opacity: 0.85;
     }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 5.5rem;
+      }
+
+      .face {
+        font-size: clamp(6.5rem, 25vw, 13rem);
+      }
+
+      .mic-toggle,
+      .music-toggle,
+      .camera-toggle,
+      .sponsor-toggle,
+      .voice-toggle,
+      .settings-toggle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        top: 0.5rem;
+      }
+
+      .mic-toggle { left: 0.5rem; }
+      .music-toggle { left: calc(0.5rem + 14vw); }
+      .camera-toggle { left: calc(0.5rem + 28vw); }
+
+      .voice-toggle { right: 0.5rem; }
+      .settings-toggle { right: calc(0.5rem + 14vw); }
+      .sponsor-toggle { right: calc(0.5rem + 28vw); }
+    }
   </style>
 </head>
 
