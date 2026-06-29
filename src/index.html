@@ -53,6 +53,7 @@
     .mic-toggle,
     .music-toggle,
     .camera-toggle,
+    .sponsor-toggle,
     .voice-toggle,
     .settings-toggle {
       position: fixed;
@@ -76,6 +77,7 @@
     .mic-toggle:hover,
     .music-toggle:hover,
     .camera-toggle:hover,
+    .sponsor-toggle:hover,
     .voice-toggle:hover,
     .settings-toggle:hover {
       transform: translateY(-1px) scale(1.04);
@@ -91,6 +93,10 @@
 
     .camera-toggle {
       left: 9rem;
+    }
+
+    .sponsor-toggle {
+      right: 9rem;
     }
 
     .voice-toggle {
@@ -324,26 +330,6 @@
       transform: scale(1.05);
       opacity: 0.85;
     }
-
-    .footer {
-      position: fixed;
-      bottom: 0.75rem;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 5;
-      font-size: 0.85rem;
-    }
-
-    .footer a {
-      color: rgba(255, 255, 255, 0.45);
-      text-decoration: none;
-      transition: color 180ms ease, text-shadow 180ms ease;
-    }
-
-    .footer a:hover {
-      color: rgba(255, 255, 255, 0.85);
-      text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
-    }
   </style>
 </head>
 
@@ -363,6 +349,9 @@
   </button>
   <button id="settingsToggle" class="settings-toggle" type="button" title="Settings">
     <i class="fa-solid fa-gear" aria-hidden="true"></i>
+  </button>
+  <button id="sponsorToggle" class="sponsor-toggle" type="button" title="Sponsor us on GitHub">
+    <i class="fa-brands fa-github" aria-hidden="true"></i>
   </button>
 
   <div id="settingsModal" class="modal" aria-hidden="true">
@@ -400,9 +389,6 @@
     </form>
     <section id="log" class="log"></section>
   </main>
-  <footer class="footer">
-    <a href="https://github.com/sponsors/HappyMonkeyAI" target="_blank" rel="noopener">Sponsor us on GitHub</a>
-  </footer>
   <script>
     const face = document.querySelector('#face');
     const mood = document.querySelector('#mood');
@@ -420,6 +406,7 @@
     const musicToggle = document.querySelector('#musicToggle');
     const bgMusic = document.querySelector('#bgMusic');
     const cameraToggle = document.querySelector('#cameraToggle');
+    const sponsorToggle = document.querySelector('#sponsorToggle');
     const RANDOM_NAMES = [
       "GLITCH", "GIZMO", "SPARK", "SCRAP", "RUSTY", "GREMLIN",
       "PEEVE", "WIDGET", "DONGLE", "MOGWAI", "GOBLIN", "SOCKET",
@@ -766,6 +753,11 @@
         }
         addLog("SYSTEM: Motion detection disabled");
       }
+    });
+
+    sponsorToggle.addEventListener('click', () => {
+      playBlip(1300, 0.08);
+      window.open('https://github.com/sponsors/HappyMonkeyAI', '_blank');
     });
 
     voiceSelect.addEventListener('change', () => {
