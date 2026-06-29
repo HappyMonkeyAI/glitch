@@ -1,0 +1,1683 @@
+{
+  "article_search": {
+    "pet_companion": [
+      {
+        "source": "devto",
+        "id": 3773154,
+        "title": "What was your win this week!?",
+        "url": "https://dev.to/devteam/what-was-your-win-this-week-4na1",
+        "description": "👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count -- big or small...",
+        "tags": [
+          "discuss",
+          "weeklyretro"
+        ],
+        "reactions": 40,
+        "comments": 34,
+        "score": 12.0,
+        "published_at": "2026-06-26T13:00:00Z"
+      },
+      {
+        "source": "devto",
+        "id": 3999907,
+        "title": "Never forget to enter the Stern Grove lottery again!",
+        "url": "https://dev.to/entire/never-forget-to-enter-the-stern-grove-lottery-again-31i5",
+        "description": "Browser automation with Playwright, Python, GitHub Actions, and Entire to auto-enter San Francisco Stern Grove concert lotteries each week!",
+        "tags": [
+          "ai",
+          "playwright",
+          "githubactions",
+          "browserautomation"
+        ],
+        "reactions": 25,
+        "comments": 5,
+        "score": 6.5,
+        "published_at": "2026-06-26T17:18:04Z"
+      },
+      {
+        "source": "rss",
+        "id": 975090002,
+        "title": "Wiring an LLM Agent to Live Crypto Market Data over MCP",
+        "url": "https://dev.to/midas_flow_1271bdd398a82a/wiring-an-llm-agent-to-live-crypto-market-data-over-mcp-138j",
+        "description": "<p><em>Why candles aren't enough, what microstructure your agent actually needs, and how a keyless self-describing MCP schema beats hardcoded REST parsing in an agent loop.</em></p>\n\n<p>If you've ever pointed an LLM agent at a crypto market and asked it \"is something happening on SOL right now?\", yo",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:18:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 745794121,
+        "title": "Connect a Laravel AI Agent to Any MCP Server: A Hands-On Guide",
+        "url": "https://dev.to/hafiz619/connect-a-laravel-ai-agent-to-any-mcp-server-a-hands-on-guide-128h",
+        "description": "<blockquote>\n<p><strong>Originally published at <a href=\"https://hafiz.dev/blog/connect-laravel-ai-agent-to-mcp-server\" rel=\"noopener noreferrer\">hafiz.dev</a></strong></p>\n</blockquote>\n\n\n\n\n<p>Most Laravel MCP tutorials teach you to build a server. You expose your app's tools, an AI client connects",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:01:09+00:00"
+      },
+      {
+        "source": "devto",
+        "id": 3967546,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, QAT, MTP, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-qat-mtp-and-antigravity-cli-3gn6",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "speculativedecoding",
+          "antigravitycli",
+          "qat",
+          "blackwell6000"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-23T03:39:55Z"
+      },
+      {
+        "source": "devto",
+        "id": 3986976,
+        "title": "The agent-first approach to building products",
+        "url": "https://dev.to/adamklein/the-agent-first-approach-to-building-products-51oj",
+        "description": "If my agent can't use your platform, you're irrelevant -- Every customer in 2026   The agent-first...",
+        "tags": [
+          "ai",
+          "webdev",
+          "agents",
+          "product"
+        ],
+        "reactions": 2,
+        "comments": 2,
+        "score": 3.6,
+        "published_at": "2026-06-25T11:50:30Z"
+      },
+      {
+        "source": "devto",
+        "id": 3995165,
+        "title": "A Developer's Guide to Agent Hooks in Antigravity CLI",
+        "url": "https://dev.to/gde/a-developers-guide-to-agent-hooks-in-antigravity-cli-23no",
+        "description": "Motivation   To be quite honest, \"Hooks\"—the shell commands we trigger at specific points...",
+        "tags": [
+          "ai",
+          "gemini",
+          "antigravity",
+          "howto"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-26T07:03:01Z"
+      },
+      {
+        "source": "devto",
+        "id": 3959436,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, MCP, Cloud Run, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-mcp-cloud-run-and-antigravity-cli-3ckn",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "gemma4",
+          "mcps",
+          "antigravity",
+          "blackwell"
+        ],
+        "reactions": 5,
+        "comments": null,
+        "score": 3.5,
+        "published_at": "2026-06-22T02:44:39Z"
+      },
+      {
+        "source": "devto",
+        "id": 4017179,
+        "title": "Fix Web Performance Issues Faster with Modern Web Guidance and Chrome DevTools for AI Agents",
+        "url": "https://dev.to/jacobandrewsky/fix-web-performance-issues-faster-with-modern-web-guidance-and-chrome-devtools-for-ai-agents-2e7e",
+        "description": "Performance optimization has always been one of the hardest parts of web development. You run...",
+        "tags": [
+          "performance",
+          "webperf",
+          "ai",
+          "tutorial"
+        ],
+        "reactions": 2,
+        "comments": 1,
+        "score": 3.4,
+        "published_at": "2026-06-29T05:22:27Z"
+      },
+      {
+        "source": "devto",
+        "id": 3990192,
+        "title": "Not Enough SMEs or Customers to Make Your Evals? Make Some!",
+        "url": "https://dev.to/ohkpond/not-enough-smes-or-customers-to-make-your-evals-make-some-11nc",
+        "description": "How to build grounded, validated user personas and turn them into agents that generate eval data, for when you cannot reach real users or SMEs yet.",
+        "tags": [
+          "ai",
+          "evals",
+          "testing",
+          "personas"
+        ],
+        "reactions": 1,
+        "comments": null,
+        "score": 3.1,
+        "published_at": "2026-06-25T15:07:57Z"
+      }
+    ],
+    "voice_stack": [
+      {
+        "source": "devto",
+        "id": 3773154,
+        "title": "What was your win this week!?",
+        "url": "https://dev.to/devteam/what-was-your-win-this-week-4na1",
+        "description": "👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count -- big or small...",
+        "tags": [
+          "discuss",
+          "weeklyretro"
+        ],
+        "reactions": 40,
+        "comments": 34,
+        "score": 12.0,
+        "published_at": "2026-06-26T13:00:00Z"
+      },
+      {
+        "source": "devto",
+        "id": 4017179,
+        "title": "Fix Web Performance Issues Faster with Modern Web Guidance and Chrome DevTools for AI Agents",
+        "url": "https://dev.to/jacobandrewsky/fix-web-performance-issues-faster-with-modern-web-guidance-and-chrome-devtools-for-ai-agents-2e7e",
+        "description": "Performance optimization has always been one of the hardest parts of web development. You run...",
+        "tags": [
+          "performance",
+          "webperf",
+          "ai",
+          "tutorial"
+        ],
+        "reactions": 2,
+        "comments": 1,
+        "score": 8.9,
+        "published_at": "2026-06-29T05:22:27Z"
+      },
+      {
+        "source": "devto",
+        "id": 3986976,
+        "title": "The agent-first approach to building products",
+        "url": "https://dev.to/adamklein/the-agent-first-approach-to-building-products-51oj",
+        "description": "If my agent can't use your platform, you're irrelevant -- Every customer in 2026   The agent-first...",
+        "tags": [
+          "ai",
+          "webdev",
+          "agents",
+          "product"
+        ],
+        "reactions": 2,
+        "comments": 2,
+        "score": 7.6,
+        "published_at": "2026-06-25T11:50:30Z"
+      },
+      {
+        "source": "devto",
+        "id": 3999907,
+        "title": "Never forget to enter the Stern Grove lottery again!",
+        "url": "https://dev.to/entire/never-forget-to-enter-the-stern-grove-lottery-again-31i5",
+        "description": "Browser automation with Playwright, Python, GitHub Actions, and Entire to auto-enter San Francisco Stern Grove concert lotteries each week!",
+        "tags": [
+          "ai",
+          "playwright",
+          "githubactions",
+          "browserautomation"
+        ],
+        "reactions": 25,
+        "comments": 5,
+        "score": 6.5,
+        "published_at": "2026-06-26T17:18:04Z"
+      },
+      {
+        "source": "rss",
+        "id": 121091920,
+        "title": "Wiring an LLM Agent to Live Crypto Market Data over MCP",
+        "url": "https://dev.to/midas_flow_1271bdd398a82a/wiring-an-llm-agent-to-live-crypto-market-data-over-mcp-138j",
+        "description": "<p><em>Why candles aren't enough, what microstructure your agent actually needs, and how a keyless self-describing MCP schema beats hardcoded REST parsing in an agent loop.</em></p>\n\n<p>If you've ever pointed an LLM agent at a crypto market and asked it \"is something happening on SOL right now?\", yo",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:18:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 689284408,
+        "title": "Edit SharePoint Word Documents from Any AI Agent over MCP with OfficeAgent.NET 0.2",
+        "url": "https://dev.to/ilia-sokolov/edit-sharepoint-word-documents-from-any-ai-agent-over-mcp-with-officeagentnet-02-4ejm",
+        "description": "<p>A few weeks ago I released <a href=\"https://github.com/ilia-sokolov/OfficeAgent.NET\" rel=\"noopener noreferrer\">OfficeAgent.NET 0.1</a>, an open-source .NET library that lets AI agents create and edit real Word documents. Instead of manipulating the Open XML themselves, they describe their intent ",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:17:11+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 526764779,
+        "title": "Grant Writing Does Not Need Another Chatbot. It Needs Infrastructure.",
+        "url": "https://dev.to/vassiliylakhonin/grant-writing-does-not-need-another-chatbot-it-needs-infrastructure-36le",
+        "description": "<p>Most AI tools for grants start with the same assumption:</p>\n\n<blockquote>\n<p>The hard part is writing the proposal.</p>\n</blockquote>\n\n<p>I think that is only partly true.</p>\n\n<p>For serious NGO, donor, and implementer workflows, the harder problem is not producing text. It is controlling the p",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T09:08:57+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 675306448,
+        "title": "🧩 Runtime Snapshots #18 - Structured Runtime Perception: The Layer Agents Are Missing",
+        "url": "https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-18-structured-runtime-perception-the-layer-agents-are-missing-2hgn",
+        "description": "<p>The last three Runtime Snapshots posts built a stack. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-15-your-ai-agent-is-blind-were-fixing-that-4166\">#15</a> said your agent is blind and needs eyes and hands. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T08:44:46+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 117350360,
+        "title": "Your AI agent keeps rebuilding decisions your team already made. Here's the fix I landed on.",
+        "url": "https://dev.to/ali_abbas_d8086e0f96d8173/your-ai-agent-keeps-rebuilding-decisions-your-team-already-made-heres-the-fix-i-landed-on-f9e",
+        "description": "<p>Coding agents have no memory of <em>why</em> your codebase is the way it is. They<br>\nre-derive settled decisions every session, confidently redo things your team<br>\nalready ruled out, and burn tokens doing it. I tried the three obvious fixes (a<br>\n<code>CLAUDE.md</code> file, RAG over our docs",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:43:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 741368241,
+        "title": "Connect a Laravel AI Agent to Any MCP Server: A Hands-On Guide",
+        "url": "https://dev.to/hafiz619/connect-a-laravel-ai-agent-to-any-mcp-server-a-hands-on-guide-128h",
+        "description": "<blockquote>\n<p><strong>Originally published at <a href=\"https://hafiz.dev/blog/connect-laravel-ai-agent-to-mcp-server\" rel=\"noopener noreferrer\">hafiz.dev</a></strong></p>\n</blockquote>\n\n\n\n\n<p>Most Laravel MCP tutorials teach you to build a server. You expose your app's tools, an AI client connects",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:01:09+00:00"
+      }
+    ],
+    "desktop_ambient": [
+      {
+        "source": "devto",
+        "id": 3773154,
+        "title": "What was your win this week!?",
+        "url": "https://dev.to/devteam/what-was-your-win-this-week-4na1",
+        "description": "👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count -- big or small...",
+        "tags": [
+          "discuss",
+          "weeklyretro"
+        ],
+        "reactions": 40,
+        "comments": 34,
+        "score": 12.0,
+        "published_at": "2026-06-26T13:00:00Z"
+      },
+      {
+        "source": "devto",
+        "id": 3986976,
+        "title": "The agent-first approach to building products",
+        "url": "https://dev.to/adamklein/the-agent-first-approach-to-building-products-51oj",
+        "description": "If my agent can't use your platform, you're irrelevant -- Every customer in 2026   The agent-first...",
+        "tags": [
+          "ai",
+          "webdev",
+          "agents",
+          "product"
+        ],
+        "reactions": 2,
+        "comments": 2,
+        "score": 7.6,
+        "published_at": "2026-06-25T11:50:30Z"
+      },
+      {
+        "source": "devto",
+        "id": 3999907,
+        "title": "Never forget to enter the Stern Grove lottery again!",
+        "url": "https://dev.to/entire/never-forget-to-enter-the-stern-grove-lottery-again-31i5",
+        "description": "Browser automation with Playwright, Python, GitHub Actions, and Entire to auto-enter San Francisco Stern Grove concert lotteries each week!",
+        "tags": [
+          "ai",
+          "playwright",
+          "githubactions",
+          "browserautomation"
+        ],
+        "reactions": 25,
+        "comments": 5,
+        "score": 6.5,
+        "published_at": "2026-06-26T17:18:04Z"
+      },
+      {
+        "source": "rss",
+        "id": 885068633,
+        "title": "Wiring an LLM Agent to Live Crypto Market Data over MCP",
+        "url": "https://dev.to/midas_flow_1271bdd398a82a/wiring-an-llm-agent-to-live-crypto-market-data-over-mcp-138j",
+        "description": "<p><em>Why candles aren't enough, what microstructure your agent actually needs, and how a keyless self-describing MCP schema beats hardcoded REST parsing in an agent loop.</em></p>\n\n<p>If you've ever pointed an LLM agent at a crypto market and asked it \"is something happening on SOL right now?\", yo",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 6.0,
+        "published_at": "2026-06-29T11:18:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 39411321,
+        "title": "Connect a Laravel AI Agent to Any MCP Server: A Hands-On Guide",
+        "url": "https://dev.to/hafiz619/connect-a-laravel-ai-agent-to-any-mcp-server-a-hands-on-guide-128h",
+        "description": "<blockquote>\n<p><strong>Originally published at <a href=\"https://hafiz.dev/blog/connect-laravel-ai-agent-to-mcp-server\" rel=\"noopener noreferrer\">hafiz.dev</a></strong></p>\n</blockquote>\n\n\n\n\n<p>Most Laravel MCP tutorials teach you to build a server. You expose your app's tools, an AI client connects",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 6.0,
+        "published_at": "2026-06-29T07:01:09+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 183839444,
+        "title": "Edit SharePoint Word Documents from Any AI Agent over MCP with OfficeAgent.NET 0.2",
+        "url": "https://dev.to/ilia-sokolov/edit-sharepoint-word-documents-from-any-ai-agent-over-mcp-with-officeagentnet-02-4ejm",
+        "description": "<p>A few weeks ago I released <a href=\"https://github.com/ilia-sokolov/OfficeAgent.NET\" rel=\"noopener noreferrer\">OfficeAgent.NET 0.1</a>, an open-source .NET library that lets AI agents create and edit real Word documents. Instead of manipulating the Open XML themselves, they describe their intent ",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:17:11+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 786281843,
+        "title": "Grant Writing Does Not Need Another Chatbot. It Needs Infrastructure.",
+        "url": "https://dev.to/vassiliylakhonin/grant-writing-does-not-need-another-chatbot-it-needs-infrastructure-36le",
+        "description": "<p>Most AI tools for grants start with the same assumption:</p>\n\n<blockquote>\n<p>The hard part is writing the proposal.</p>\n</blockquote>\n\n<p>I think that is only partly true.</p>\n\n<p>For serious NGO, donor, and implementer workflows, the harder problem is not producing text. It is controlling the p",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T09:08:57+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 837115761,
+        "title": "🧩 Runtime Snapshots #18 - Structured Runtime Perception: The Layer Agents Are Missing",
+        "url": "https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-18-structured-runtime-perception-the-layer-agents-are-missing-2hgn",
+        "description": "<p>The last three Runtime Snapshots posts built a stack. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-15-your-ai-agent-is-blind-were-fixing-that-4166\">#15</a> said your agent is blind and needs eyes and hands. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T08:44:46+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 983435356,
+        "title": "Your AI agent keeps rebuilding decisions your team already made. Here's the fix I landed on.",
+        "url": "https://dev.to/ali_abbas_d8086e0f96d8173/your-ai-agent-keeps-rebuilding-decisions-your-team-already-made-heres-the-fix-i-landed-on-f9e",
+        "description": "<p>Coding agents have no memory of <em>why</em> your codebase is the way it is. They<br>\nre-derive settled decisions every session, confidently redo things your team<br>\nalready ruled out, and burn tokens doing it. I tried the three obvious fixes (a<br>\n<code>CLAUDE.md</code> file, RAG over our docs",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:43:37+00:00"
+      },
+      {
+        "source": "devto",
+        "id": 3967546,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, QAT, MTP, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-qat-mtp-and-antigravity-cli-3gn6",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "speculativedecoding",
+          "antigravitycli",
+          "qat",
+          "blackwell6000"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-23T03:39:55Z"
+      }
+    ],
+    "retro_ai_game": [
+      {
+        "source": "devto",
+        "id": 3773154,
+        "title": "What was your win this week!?",
+        "url": "https://dev.to/devteam/what-was-your-win-this-week-4na1",
+        "description": "👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count -- big or small...",
+        "tags": [
+          "discuss",
+          "weeklyretro"
+        ],
+        "reactions": 40,
+        "comments": 34,
+        "score": 12.0,
+        "published_at": "2026-06-26T13:00:00Z"
+      },
+      {
+        "source": "devto",
+        "id": 3999907,
+        "title": "Never forget to enter the Stern Grove lottery again!",
+        "url": "https://dev.to/entire/never-forget-to-enter-the-stern-grove-lottery-again-31i5",
+        "description": "Browser automation with Playwright, Python, GitHub Actions, and Entire to auto-enter San Francisco Stern Grove concert lotteries each week!",
+        "tags": [
+          "ai",
+          "playwright",
+          "githubactions",
+          "browserautomation"
+        ],
+        "reactions": 25,
+        "comments": 5,
+        "score": 6.5,
+        "published_at": "2026-06-26T17:18:04Z"
+      },
+      {
+        "source": "rss",
+        "id": 356156368,
+        "title": "🧩 Runtime Snapshots #18 - Structured Runtime Perception: The Layer Agents Are Missing",
+        "url": "https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-18-structured-runtime-perception-the-layer-agents-are-missing-2hgn",
+        "description": "<p>The last three Runtime Snapshots posts built a stack. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-15-your-ai-agent-is-blind-were-fixing-that-4166\">#15</a> said your agent is blind and needs eyes and hands. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T08:44:46+00:00"
+      },
+      {
+        "source": "devto",
+        "id": 3967546,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, QAT, MTP, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-qat-mtp-and-antigravity-cli-3gn6",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "speculativedecoding",
+          "antigravitycli",
+          "qat",
+          "blackwell6000"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-23T03:39:55Z"
+      },
+      {
+        "source": "devto",
+        "id": 3986976,
+        "title": "The agent-first approach to building products",
+        "url": "https://dev.to/adamklein/the-agent-first-approach-to-building-products-51oj",
+        "description": "If my agent can't use your platform, you're irrelevant -- Every customer in 2026   The agent-first...",
+        "tags": [
+          "ai",
+          "webdev",
+          "agents",
+          "product"
+        ],
+        "reactions": 2,
+        "comments": 2,
+        "score": 3.6,
+        "published_at": "2026-06-25T11:50:30Z"
+      },
+      {
+        "source": "devto",
+        "id": 3995165,
+        "title": "A Developer's Guide to Agent Hooks in Antigravity CLI",
+        "url": "https://dev.to/gde/a-developers-guide-to-agent-hooks-in-antigravity-cli-23no",
+        "description": "Motivation   To be quite honest, \"Hooks\"—the shell commands we trigger at specific points...",
+        "tags": [
+          "ai",
+          "gemini",
+          "antigravity",
+          "howto"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-26T07:03:01Z"
+      },
+      {
+        "source": "devto",
+        "id": 3959436,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, MCP, Cloud Run, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-mcp-cloud-run-and-antigravity-cli-3ckn",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "gemma4",
+          "mcps",
+          "antigravity",
+          "blackwell"
+        ],
+        "reactions": 5,
+        "comments": null,
+        "score": 3.5,
+        "published_at": "2026-06-22T02:44:39Z"
+      },
+      {
+        "source": "devto",
+        "id": 4017179,
+        "title": "Fix Web Performance Issues Faster with Modern Web Guidance and Chrome DevTools for AI Agents",
+        "url": "https://dev.to/jacobandrewsky/fix-web-performance-issues-faster-with-modern-web-guidance-and-chrome-devtools-for-ai-agents-2e7e",
+        "description": "Performance optimization has always been one of the hardest parts of web development. You run...",
+        "tags": [
+          "performance",
+          "webperf",
+          "ai",
+          "tutorial"
+        ],
+        "reactions": 2,
+        "comments": 1,
+        "score": 3.4,
+        "published_at": "2026-06-29T05:22:27Z"
+      },
+      {
+        "source": "devto",
+        "id": 3990192,
+        "title": "Not Enough SMEs or Customers to Make Your Evals? Make Some!",
+        "url": "https://dev.to/ohkpond/not-enough-smes-or-customers-to-make-your-evals-make-some-11nc",
+        "description": "How to build grounded, validated user personas and turn them into agents that generate eval data, for when you cannot reach real users or SMEs yet.",
+        "tags": [
+          "ai",
+          "evals",
+          "testing",
+          "personas"
+        ],
+        "reactions": 1,
+        "comments": null,
+        "score": 3.1,
+        "published_at": "2026-06-25T15:07:57Z"
+      },
+      {
+        "source": "devto",
+        "id": 3980702,
+        "title": "How I Use AI Councils to Solve Ambiguous Engineering Problems",
+        "url": "https://dev.to/j3nnning/how-i-use-ai-councils-to-solve-ambiguous-engineering-problems-4dii",
+        "description": "A Practical AI Council Workflow for Software Architecture and Delivery               One AI...",
+        "tags": [
+          "ai",
+          "programming",
+          "webdev",
+          "productivity"
+        ],
+        "reactions": 0,
+        "comments": null,
+        "score": 3.0,
+        "published_at": "2026-06-24T16:41:10Z"
+      }
+    ],
+    "viral_consumer_ai": [
+      {
+        "source": "devto",
+        "id": 3773154,
+        "title": "What was your win this week!?",
+        "url": "https://dev.to/devteam/what-was-your-win-this-week-4na1",
+        "description": "👋👋👋👋 Looking back on your week -- what was something you're proud of? All wins count -- big or small...",
+        "tags": [
+          "discuss",
+          "weeklyretro"
+        ],
+        "reactions": 40,
+        "comments": 34,
+        "score": 12.0,
+        "published_at": "2026-06-26T13:00:00Z"
+      },
+      {
+        "source": "devto",
+        "id": 3986976,
+        "title": "The agent-first approach to building products",
+        "url": "https://dev.to/adamklein/the-agent-first-approach-to-building-products-51oj",
+        "description": "If my agent can't use your platform, you're irrelevant -- Every customer in 2026   The agent-first...",
+        "tags": [
+          "ai",
+          "webdev",
+          "agents",
+          "product"
+        ],
+        "reactions": 2,
+        "comments": 2,
+        "score": 7.6,
+        "published_at": "2026-06-25T11:50:30Z"
+      },
+      {
+        "source": "devto",
+        "id": 3999907,
+        "title": "Never forget to enter the Stern Grove lottery again!",
+        "url": "https://dev.to/entire/never-forget-to-enter-the-stern-grove-lottery-again-31i5",
+        "description": "Browser automation with Playwright, Python, GitHub Actions, and Entire to auto-enter San Francisco Stern Grove concert lotteries each week!",
+        "tags": [
+          "ai",
+          "playwright",
+          "githubactions",
+          "browserautomation"
+        ],
+        "reactions": 25,
+        "comments": 5,
+        "score": 6.5,
+        "published_at": "2026-06-26T17:18:04Z"
+      },
+      {
+        "source": "rss",
+        "id": 238427670,
+        "title": "Grant Writing Does Not Need Another Chatbot. It Needs Infrastructure.",
+        "url": "https://dev.to/vassiliylakhonin/grant-writing-does-not-need-another-chatbot-it-needs-infrastructure-36le",
+        "description": "<p>Most AI tools for grants start with the same assumption:</p>\n\n<blockquote>\n<p>The hard part is writing the proposal.</p>\n</blockquote>\n\n<p>I think that is only partly true.</p>\n\n<p>For serious NGO, donor, and implementer workflows, the harder problem is not producing text. It is controlling the p",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 6.0,
+        "published_at": "2026-06-29T09:08:57+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 374951044,
+        "title": "Wiring an LLM Agent to Live Crypto Market Data over MCP",
+        "url": "https://dev.to/midas_flow_1271bdd398a82a/wiring-an-llm-agent-to-live-crypto-market-data-over-mcp-138j",
+        "description": "<p><em>Why candles aren't enough, what microstructure your agent actually needs, and how a keyless self-describing MCP schema beats hardcoded REST parsing in an agent loop.</em></p>\n\n<p>If you've ever pointed an LLM agent at a crypto market and asked it \"is something happening on SOL right now?\", yo",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:18:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 425957901,
+        "title": "Edit SharePoint Word Documents from Any AI Agent over MCP with OfficeAgent.NET 0.2",
+        "url": "https://dev.to/ilia-sokolov/edit-sharepoint-word-documents-from-any-ai-agent-over-mcp-with-officeagentnet-02-4ejm",
+        "description": "<p>A few weeks ago I released <a href=\"https://github.com/ilia-sokolov/OfficeAgent.NET\" rel=\"noopener noreferrer\">OfficeAgent.NET 0.1</a>, an open-source .NET library that lets AI agents create and edit real Word documents. Instead of manipulating the Open XML themselves, they describe their intent ",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T11:17:11+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 632207221,
+        "title": "🧩 Runtime Snapshots #18 - Structured Runtime Perception: The Layer Agents Are Missing",
+        "url": "https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-18-structured-runtime-perception-the-layer-agents-are-missing-2hgn",
+        "description": "<p>The last three Runtime Snapshots posts built a stack. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots-15-your-ai-agent-is-blind-were-fixing-that-4166\">#15</a> said your agent is blind and needs eyes and hands. <a href=\"https://dev.to/alexey_sokolov_10deecd763/runtime-snapshots",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T08:44:46+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 236492251,
+        "title": "Your AI agent keeps rebuilding decisions your team already made. Here's the fix I landed on.",
+        "url": "https://dev.to/ali_abbas_d8086e0f96d8173/your-ai-agent-keeps-rebuilding-decisions-your-team-already-made-heres-the-fix-i-landed-on-f9e",
+        "description": "<p>Coding agents have no memory of <em>why</em> your codebase is the way it is. They<br>\nre-derive settled decisions every session, confidently redo things your team<br>\nalready ruled out, and burn tokens doing it. I tried the three obvious fixes (a<br>\n<code>CLAUDE.md</code> file, RAG over our docs",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:43:37+00:00"
+      },
+      {
+        "source": "rss",
+        "id": 850937979,
+        "title": "Connect a Laravel AI Agent to Any MCP Server: A Hands-On Guide",
+        "url": "https://dev.to/hafiz619/connect-a-laravel-ai-agent-to-any-mcp-server-a-hands-on-guide-128h",
+        "description": "<blockquote>\n<p><strong>Originally published at <a href=\"https://hafiz.dev/blog/connect-laravel-ai-agent-to-mcp-server\" rel=\"noopener noreferrer\">hafiz.dev</a></strong></p>\n</blockquote>\n\n\n\n\n<p>Most Laravel MCP tutorials teach you to build a server. You expose your app's tools, an AI client connects",
+        "tags": [
+          "rss",
+          "https://dev.to/feed/tag/mcp"
+        ],
+        "reactions": null,
+        "comments": null,
+        "score": 4.5,
+        "published_at": "2026-06-29T07:01:09+00:00"
+      },
+      {
+        "source": "devto",
+        "id": 3967546,
+        "title": "12B Gemma 4 Deployment with NVIDIA Blackwell 6000, QAT, MTP, and Antigravity CLI",
+        "url": "https://dev.to/gde/12b-gemma-4-deployment-with-nvidia-blackwell-6000-qat-mtp-and-antigravity-cli-3gn6",
+        "description": "This article provides a step by step deployment guide for Gemma 4 to a Google Cloud Run hosted GPU...",
+        "tags": [
+          "speculativedecoding",
+          "antigravitycli",
+          "qat",
+          "blackwell6000"
+        ],
+        "reactions": 6,
+        "comments": null,
+        "score": 3.6,
+        "published_at": "2026-06-23T03:39:55Z"
+      }
+    ]
+  },
+  "article_briefs": {
+    "pet_companion": {
+      "markdown": "# Article research brief: AI companion virtual pet Tamagotchi voice assistant retention\n\n**Depth:** standard | **Items:** 8\n\n## Reading list (deduped, ranked)\n\n1. **I Wish I Had Started Documenting My Tech Journey Earlier** (score 13.0)  \n   - URL: https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m  \n   - Source: devto id=3963488  \n   - Tags: community, beginners, discuss, career  \n   - TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...\n\n2. **Join the June Solstice Game Jam: $1,000 in prizes!** (score 13.0)  \n   - URL: https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla  \n   - Source: devto id=3812839  \n   - Tags: devchallenge, gamechallenge, gamedev  \n   - We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...\n\n3. **7 New JavaScript Features (And 2 I'm Still Waiting For)** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8  \n   - Source: devto id=3973904  \n   - Tags: javascript, typescript, node, webdev  \n   - Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...\n\n4. **Congrats to the Google I/O 2026 Writing Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364  \n   - Source: devto id=3875595  \n   - Tags: devchallenge, googleiochallenge  \n   - We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...\n\n5. **The Code Works. What Could Possibly Go Wrong?** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm  \n   - Source: devto id=3861043  \n   - Tags: ai, webdev, discuss  \n   - Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...\n\n6. **Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk  \n   - Source: devto id=3926659  \n   - Tags: javascript, webdev, programming, architecture  \n   - I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...\n\n7. **Congrats to the Gemma 4 Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc  \n   - Source: devto id=3934585  \n   - Tags: devchallenge, gemmachallenge, gemma  \n   - We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...\n\n8. **I am behind, and I can't prove it but does it matter?** (score 13.0)  \n   - URL: https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6  \n   - Source: devto id=3964664  \n   - Tags: discuss, community, mentalhealth, career  \n   - Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...\n\n## Suggested next steps\n\n1. `get_article` on top 2–3 IDs for full markdown bodies.\n2. Note stack-specific gaps as open questions.\n3. Escalate to Hermes `deep-research` skill if the decision is strategic.\n",
+      "articles": [
+        {
+          "source": "devto",
+          "id": 3963488,
+          "title": "I Wish I Had Started Documenting My Tech Journey Earlier",
+          "url": "https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m",
+          "description": "TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...",
+          "tags": [
+            "community",
+            "beginners",
+            "discuss",
+            "career"
+          ],
+          "reactions": 218,
+          "comments": 149,
+          "score": 13.0,
+          "published_at": "2026-06-22T14:56:08Z"
+        },
+        {
+          "source": "devto",
+          "id": 3812839,
+          "title": "Join the June Solstice Game Jam: $1,000 in prizes!",
+          "url": "https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla",
+          "description": "We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...",
+          "tags": [
+            "devchallenge",
+            "gamechallenge",
+            "gamedev"
+          ],
+          "reactions": 241,
+          "comments": 103,
+          "score": 13.0,
+          "published_at": "2026-06-03T20:22:10Z"
+        },
+        {
+          "source": "devto",
+          "id": 3973904,
+          "title": "7 New JavaScript Features (And 2 I'm Still Waiting For)",
+          "url": "https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8",
+          "description": "Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...",
+          "tags": [
+            "javascript",
+            "typescript",
+            "node",
+            "webdev"
+          ],
+          "reactions": 161,
+          "comments": 49,
+          "score": 13.0,
+          "published_at": "2026-06-24T09:14:11Z"
+        },
+        {
+          "source": "devto",
+          "id": 3875595,
+          "title": "Congrats to the Google I/O 2026 Writing Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364",
+          "description": "We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...",
+          "tags": [
+            "devchallenge",
+            "googleiochallenge"
+          ],
+          "reactions": 155,
+          "comments": 67,
+          "score": 13.0,
+          "published_at": "2026-06-11T15:38:46Z"
+        },
+        {
+          "source": "devto",
+          "id": 3861043,
+          "title": "The Code Works. What Could Possibly Go Wrong?",
+          "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+          "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+          "tags": [
+            "ai",
+            "webdev",
+            "discuss"
+          ],
+          "reactions": 146,
+          "comments": 137,
+          "score": 13.0,
+          "published_at": "2026-06-10T08:26:35Z"
+        },
+        {
+          "source": "devto",
+          "id": 3926659,
+          "title": "Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets",
+          "url": "https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk",
+          "description": "I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...",
+          "tags": [
+            "javascript",
+            "webdev",
+            "programming",
+            "architecture"
+          ],
+          "reactions": 141,
+          "comments": 71,
+          "score": 13.0,
+          "published_at": "2026-06-18T07:25:04Z"
+        },
+        {
+          "source": "devto",
+          "id": 3934585,
+          "title": "Congrats to the Gemma 4 Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc",
+          "description": "We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...",
+          "tags": [
+            "devchallenge",
+            "gemmachallenge",
+            "gemma"
+          ],
+          "reactions": 97,
+          "comments": 50,
+          "score": 13.0,
+          "published_at": "2026-06-18T18:56:22Z"
+        },
+        {
+          "source": "devto",
+          "id": 3964664,
+          "title": "I am behind, and I can't prove it but does it matter?",
+          "url": "https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6",
+          "description": "Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...",
+          "tags": [
+            "discuss",
+            "community",
+            "mentalhealth",
+            "career"
+          ],
+          "reactions": 141,
+          "comments": 87,
+          "score": 13.0,
+          "published_at": "2026-06-22T20:24:25Z"
+        }
+      ]
+    },
+    "voice_stack": {
+      "markdown": "# Article research brief: real-time voice AI web app websocket speech to speech latency\n\n**Depth:** standard | **Items:** 8\n\n## Reading list (deduped, ranked)\n\n1. **Is This How We'll Build Websites Soon? (webMCP Live Demo 🚀)** (score 18.5)  \n   - URL: https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33  \n   - Source: devto id=3806074  \n   - Tags: javascript, react, mcp, ai  \n   - A few years ago, we started adapting our websites for mobile devices. Then we adapted them for...\n\n2. **I Wish I Had Started Documenting My Tech Journey Earlier** (score 13.0)  \n   - URL: https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m  \n   - Source: devto id=3963488  \n   - Tags: community, beginners, discuss, career  \n   - TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...\n\n3. **Join the June Solstice Game Jam: $1,000 in prizes!** (score 13.0)  \n   - URL: https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla  \n   - Source: devto id=3812839  \n   - Tags: devchallenge, gamechallenge, gamedev  \n   - We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...\n\n4. **7 New JavaScript Features (And 2 I'm Still Waiting For)** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8  \n   - Source: devto id=3973904  \n   - Tags: javascript, typescript, node, webdev  \n   - Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...\n\n5. **Congrats to the Google I/O 2026 Writing Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364  \n   - Source: devto id=3875595  \n   - Tags: devchallenge, googleiochallenge  \n   - We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...\n\n6. **The Code Works. What Could Possibly Go Wrong?** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm  \n   - Source: devto id=3861043  \n   - Tags: ai, webdev, discuss  \n   - Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...\n\n7. **Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk  \n   - Source: devto id=3926659  \n   - Tags: javascript, webdev, programming, architecture  \n   - I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...\n\n8. **Congrats to the Gemma 4 Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc  \n   - Source: devto id=3934585  \n   - Tags: devchallenge, gemmachallenge, gemma  \n   - We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...\n\n## Suggested next steps\n\n1. `get_article` on top 2–3 IDs for full markdown bodies.\n2. Note stack-specific gaps as open questions.\n3. Escalate to Hermes `deep-research` skill if the decision is strategic.\n",
+      "articles": [
+        {
+          "source": "devto",
+          "id": 3806074,
+          "title": "Is This How We'll Build Websites Soon? (webMCP Live Demo 🚀)",
+          "url": "https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33",
+          "description": "A few years ago, we started adapting our websites for mobile devices. Then we adapted them for...",
+          "tags": [
+            "javascript",
+            "react",
+            "mcp",
+            "ai"
+          ],
+          "reactions": 147,
+          "comments": 137,
+          "score": 18.5,
+          "published_at": "2026-06-03T07:11:55Z"
+        },
+        {
+          "source": "devto",
+          "id": 3963488,
+          "title": "I Wish I Had Started Documenting My Tech Journey Earlier",
+          "url": "https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m",
+          "description": "TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...",
+          "tags": [
+            "community",
+            "beginners",
+            "discuss",
+            "career"
+          ],
+          "reactions": 218,
+          "comments": 149,
+          "score": 13.0,
+          "published_at": "2026-06-22T14:56:08Z"
+        },
+        {
+          "source": "devto",
+          "id": 3812839,
+          "title": "Join the June Solstice Game Jam: $1,000 in prizes!",
+          "url": "https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla",
+          "description": "We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...",
+          "tags": [
+            "devchallenge",
+            "gamechallenge",
+            "gamedev"
+          ],
+          "reactions": 241,
+          "comments": 103,
+          "score": 13.0,
+          "published_at": "2026-06-03T20:22:10Z"
+        },
+        {
+          "source": "devto",
+          "id": 3973904,
+          "title": "7 New JavaScript Features (And 2 I'm Still Waiting For)",
+          "url": "https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8",
+          "description": "Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...",
+          "tags": [
+            "javascript",
+            "typescript",
+            "node",
+            "webdev"
+          ],
+          "reactions": 161,
+          "comments": 49,
+          "score": 13.0,
+          "published_at": "2026-06-24T09:14:11Z"
+        },
+        {
+          "source": "devto",
+          "id": 3875595,
+          "title": "Congrats to the Google I/O 2026 Writing Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364",
+          "description": "We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...",
+          "tags": [
+            "devchallenge",
+            "googleiochallenge"
+          ],
+          "reactions": 155,
+          "comments": 67,
+          "score": 13.0,
+          "published_at": "2026-06-11T15:38:46Z"
+        },
+        {
+          "source": "devto",
+          "id": 3861043,
+          "title": "The Code Works. What Could Possibly Go Wrong?",
+          "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+          "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+          "tags": [
+            "ai",
+            "webdev",
+            "discuss"
+          ],
+          "reactions": 146,
+          "comments": 137,
+          "score": 13.0,
+          "published_at": "2026-06-10T08:26:35Z"
+        },
+        {
+          "source": "devto",
+          "id": 3926659,
+          "title": "Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets",
+          "url": "https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk",
+          "description": "I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...",
+          "tags": [
+            "javascript",
+            "webdev",
+            "programming",
+            "architecture"
+          ],
+          "reactions": 141,
+          "comments": 71,
+          "score": 13.0,
+          "published_at": "2026-06-18T07:25:04Z"
+        },
+        {
+          "source": "devto",
+          "id": 3934585,
+          "title": "Congrats to the Gemma 4 Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc",
+          "description": "We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...",
+          "tags": [
+            "devchallenge",
+            "gemmachallenge",
+            "gemma"
+          ],
+          "reactions": 97,
+          "comments": 50,
+          "score": 13.0,
+          "published_at": "2026-06-18T18:56:22Z"
+        }
+      ]
+    },
+    "desktop_ambient": {
+      "markdown": "# Article research brief: desktop pet companion app ambient AI assistant\n\n**Depth:** standard | **Items:** 8\n\n## Reading list (deduped, ranked)\n\n1. **I Wish I Had Started Documenting My Tech Journey Earlier** (score 13.0)  \n   - URL: https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m  \n   - Source: devto id=3963488  \n   - Tags: community, beginners, discuss, career  \n   - TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...\n\n2. **Join the June Solstice Game Jam: $1,000 in prizes!** (score 13.0)  \n   - URL: https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla  \n   - Source: devto id=3812839  \n   - Tags: devchallenge, gamechallenge, gamedev  \n   - We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...\n\n3. **7 New JavaScript Features (And 2 I'm Still Waiting For)** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8  \n   - Source: devto id=3973904  \n   - Tags: javascript, typescript, node, webdev  \n   - Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...\n\n4. **Congrats to the Google I/O 2026 Writing Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364  \n   - Source: devto id=3875595  \n   - Tags: devchallenge, googleiochallenge  \n   - We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...\n\n5. **The Code Works. What Could Possibly Go Wrong?** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm  \n   - Source: devto id=3861043  \n   - Tags: ai, webdev, discuss  \n   - Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...\n\n6. **Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk  \n   - Source: devto id=3926659  \n   - Tags: javascript, webdev, programming, architecture  \n   - I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...\n\n7. **Congrats to the Gemma 4 Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc  \n   - Source: devto id=3934585  \n   - Tags: devchallenge, gemmachallenge, gemma  \n   - We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...\n\n8. **I am behind, and I can't prove it but does it matter?** (score 13.0)  \n   - URL: https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6  \n   - Source: devto id=3964664  \n   - Tags: discuss, community, mentalhealth, career  \n   - Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...\n\n## Suggested next steps\n\n1. `get_article` on top 2–3 IDs for full markdown bodies.\n2. Note stack-specific gaps as open questions.\n3. Escalate to Hermes `deep-research` skill if the decision is strategic.\n",
+      "articles": [
+        {
+          "source": "devto",
+          "id": 3963488,
+          "title": "I Wish I Had Started Documenting My Tech Journey Earlier",
+          "url": "https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m",
+          "description": "TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...",
+          "tags": [
+            "community",
+            "beginners",
+            "discuss",
+            "career"
+          ],
+          "reactions": 218,
+          "comments": 149,
+          "score": 13.0,
+          "published_at": "2026-06-22T14:56:08Z"
+        },
+        {
+          "source": "devto",
+          "id": 3812839,
+          "title": "Join the June Solstice Game Jam: $1,000 in prizes!",
+          "url": "https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla",
+          "description": "We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...",
+          "tags": [
+            "devchallenge",
+            "gamechallenge",
+            "gamedev"
+          ],
+          "reactions": 241,
+          "comments": 103,
+          "score": 13.0,
+          "published_at": "2026-06-03T20:22:10Z"
+        },
+        {
+          "source": "devto",
+          "id": 3973904,
+          "title": "7 New JavaScript Features (And 2 I'm Still Waiting For)",
+          "url": "https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8",
+          "description": "Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...",
+          "tags": [
+            "javascript",
+            "typescript",
+            "node",
+            "webdev"
+          ],
+          "reactions": 161,
+          "comments": 49,
+          "score": 13.0,
+          "published_at": "2026-06-24T09:14:11Z"
+        },
+        {
+          "source": "devto",
+          "id": 3875595,
+          "title": "Congrats to the Google I/O 2026 Writing Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364",
+          "description": "We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...",
+          "tags": [
+            "devchallenge",
+            "googleiochallenge"
+          ],
+          "reactions": 155,
+          "comments": 67,
+          "score": 13.0,
+          "published_at": "2026-06-11T15:38:46Z"
+        },
+        {
+          "source": "devto",
+          "id": 3861043,
+          "title": "The Code Works. What Could Possibly Go Wrong?",
+          "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+          "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+          "tags": [
+            "ai",
+            "webdev",
+            "discuss"
+          ],
+          "reactions": 146,
+          "comments": 137,
+          "score": 13.0,
+          "published_at": "2026-06-10T08:26:35Z"
+        },
+        {
+          "source": "devto",
+          "id": 3926659,
+          "title": "Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets",
+          "url": "https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk",
+          "description": "I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...",
+          "tags": [
+            "javascript",
+            "webdev",
+            "programming",
+            "architecture"
+          ],
+          "reactions": 141,
+          "comments": 71,
+          "score": 13.0,
+          "published_at": "2026-06-18T07:25:04Z"
+        },
+        {
+          "source": "devto",
+          "id": 3934585,
+          "title": "Congrats to the Gemma 4 Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc",
+          "description": "We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...",
+          "tags": [
+            "devchallenge",
+            "gemmachallenge",
+            "gemma"
+          ],
+          "reactions": 97,
+          "comments": 50,
+          "score": 13.0,
+          "published_at": "2026-06-18T18:56:22Z"
+        },
+        {
+          "source": "devto",
+          "id": 3964664,
+          "title": "I am behind, and I can't prove it but does it matter?",
+          "url": "https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6",
+          "description": "Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...",
+          "tags": [
+            "discuss",
+            "community",
+            "mentalhealth",
+            "career"
+          ],
+          "reactions": 141,
+          "comments": 87,
+          "score": 13.0,
+          "published_at": "2026-06-22T20:24:25Z"
+        }
+      ]
+    },
+    "retro_ai_game": {
+      "markdown": "# Article research brief: AI powered retro game virtual character companion\n\n**Depth:** standard | **Items:** 8\n\n## Reading list (deduped, ranked)\n\n1. **Join the June Solstice Game Jam: $1,000 in prizes!** (score 18.5)  \n   - URL: https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla  \n   - Source: devto id=3812839  \n   - Tags: devchallenge, gamechallenge, gamedev  \n   - We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...\n\n2. **I Wish I Had Started Documenting My Tech Journey Earlier** (score 13.0)  \n   - URL: https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m  \n   - Source: devto id=3963488  \n   - Tags: community, beginners, discuss, career  \n   - TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...\n\n3. **7 New JavaScript Features (And 2 I'm Still Waiting For)** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8  \n   - Source: devto id=3973904  \n   - Tags: javascript, typescript, node, webdev  \n   - Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...\n\n4. **Congrats to the Google I/O 2026 Writing Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364  \n   - Source: devto id=3875595  \n   - Tags: devchallenge, googleiochallenge  \n   - We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...\n\n5. **The Code Works. What Could Possibly Go Wrong?** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm  \n   - Source: devto id=3861043  \n   - Tags: ai, webdev, discuss  \n   - Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...\n\n6. **Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk  \n   - Source: devto id=3926659  \n   - Tags: javascript, webdev, programming, architecture  \n   - I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...\n\n7. **Congrats to the Gemma 4 Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc  \n   - Source: devto id=3934585  \n   - Tags: devchallenge, gemmachallenge, gemma  \n   - We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...\n\n8. **I am behind, and I can't prove it but does it matter?** (score 13.0)  \n   - URL: https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6  \n   - Source: devto id=3964664  \n   - Tags: discuss, community, mentalhealth, career  \n   - Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...\n\n## Suggested next steps\n\n1. `get_article` on top 2–3 IDs for full markdown bodies.\n2. Note stack-specific gaps as open questions.\n3. Escalate to Hermes `deep-research` skill if the decision is strategic.\n",
+      "articles": [
+        {
+          "source": "devto",
+          "id": 3812839,
+          "title": "Join the June Solstice Game Jam: $1,000 in prizes!",
+          "url": "https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla",
+          "description": "We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...",
+          "tags": [
+            "devchallenge",
+            "gamechallenge",
+            "gamedev"
+          ],
+          "reactions": 241,
+          "comments": 103,
+          "score": 18.5,
+          "published_at": "2026-06-03T20:22:10Z"
+        },
+        {
+          "source": "devto",
+          "id": 3963488,
+          "title": "I Wish I Had Started Documenting My Tech Journey Earlier",
+          "url": "https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m",
+          "description": "TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...",
+          "tags": [
+            "community",
+            "beginners",
+            "discuss",
+            "career"
+          ],
+          "reactions": 218,
+          "comments": 149,
+          "score": 13.0,
+          "published_at": "2026-06-22T14:56:08Z"
+        },
+        {
+          "source": "devto",
+          "id": 3973904,
+          "title": "7 New JavaScript Features (And 2 I'm Still Waiting For)",
+          "url": "https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8",
+          "description": "Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...",
+          "tags": [
+            "javascript",
+            "typescript",
+            "node",
+            "webdev"
+          ],
+          "reactions": 161,
+          "comments": 49,
+          "score": 13.0,
+          "published_at": "2026-06-24T09:14:11Z"
+        },
+        {
+          "source": "devto",
+          "id": 3875595,
+          "title": "Congrats to the Google I/O 2026 Writing Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364",
+          "description": "We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...",
+          "tags": [
+            "devchallenge",
+            "googleiochallenge"
+          ],
+          "reactions": 155,
+          "comments": 67,
+          "score": 13.0,
+          "published_at": "2026-06-11T15:38:46Z"
+        },
+        {
+          "source": "devto",
+          "id": 3861043,
+          "title": "The Code Works. What Could Possibly Go Wrong?",
+          "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+          "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+          "tags": [
+            "ai",
+            "webdev",
+            "discuss"
+          ],
+          "reactions": 146,
+          "comments": 137,
+          "score": 13.0,
+          "published_at": "2026-06-10T08:26:35Z"
+        },
+        {
+          "source": "devto",
+          "id": 3926659,
+          "title": "Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets",
+          "url": "https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk",
+          "description": "I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...",
+          "tags": [
+            "javascript",
+            "webdev",
+            "programming",
+            "architecture"
+          ],
+          "reactions": 141,
+          "comments": 71,
+          "score": 13.0,
+          "published_at": "2026-06-18T07:25:04Z"
+        },
+        {
+          "source": "devto",
+          "id": 3934585,
+          "title": "Congrats to the Gemma 4 Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc",
+          "description": "We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...",
+          "tags": [
+            "devchallenge",
+            "gemmachallenge",
+            "gemma"
+          ],
+          "reactions": 97,
+          "comments": 50,
+          "score": 13.0,
+          "published_at": "2026-06-18T18:56:22Z"
+        },
+        {
+          "source": "devto",
+          "id": 3964664,
+          "title": "I am behind, and I can't prove it but does it matter?",
+          "url": "https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6",
+          "description": "Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...",
+          "tags": [
+            "discuss",
+            "community",
+            "mentalhealth",
+            "career"
+          ],
+          "reactions": 141,
+          "comments": 87,
+          "score": 13.0,
+          "published_at": "2026-06-22T20:24:25Z"
+        }
+      ]
+    },
+    "viral_consumer_ai": {
+      "markdown": "# Article research brief: AI companion app viral retention sharing loops\n\n**Depth:** standard | **Items:** 8\n\n## Reading list (deduped, ranked)\n\n1. **I Wish I Had Started Documenting My Tech Journey Earlier** (score 13.0)  \n   - URL: https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m  \n   - Source: devto id=3963488  \n   - Tags: community, beginners, discuss, career  \n   - TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...\n\n2. **Join the June Solstice Game Jam: $1,000 in prizes!** (score 13.0)  \n   - URL: https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla  \n   - Source: devto id=3812839  \n   - Tags: devchallenge, gamechallenge, gamedev  \n   - We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...\n\n3. **7 New JavaScript Features (And 2 I'm Still Waiting For)** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8  \n   - Source: devto id=3973904  \n   - Tags: javascript, typescript, node, webdev  \n   - Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...\n\n4. **Congrats to the Google I/O 2026 Writing Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364  \n   - Source: devto id=3875595  \n   - Tags: devchallenge, googleiochallenge  \n   - We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...\n\n5. **The Code Works. What Could Possibly Go Wrong?** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm  \n   - Source: devto id=3861043  \n   - Tags: ai, webdev, discuss  \n   - Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...\n\n6. **Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets** (score 13.0)  \n   - URL: https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk  \n   - Source: devto id=3926659  \n   - Tags: javascript, webdev, programming, architecture  \n   - I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...\n\n7. **Congrats to the Gemma 4 Challenge Winners!** (score 13.0)  \n   - URL: https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc  \n   - Source: devto id=3934585  \n   - Tags: devchallenge, gemmachallenge, gemma  \n   - We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...\n\n8. **I am behind, and I can't prove it but does it matter?** (score 13.0)  \n   - URL: https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6  \n   - Source: devto id=3964664  \n   - Tags: discuss, community, mentalhealth, career  \n   - Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...\n\n## Suggested next steps\n\n1. `get_article` on top 2–3 IDs for full markdown bodies.\n2. Note stack-specific gaps as open questions.\n3. Escalate to Hermes `deep-research` skill if the decision is strategic.\n",
+      "articles": [
+        {
+          "source": "devto",
+          "id": 3963488,
+          "title": "I Wish I Had Started Documenting My Tech Journey Earlier",
+          "url": "https://dev.to/hemapriya_kanagala/i-wish-i-had-started-documenting-my-tech-journey-earlier-5d7m",
+          "description": "TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed...",
+          "tags": [
+            "community",
+            "beginners",
+            "discuss",
+            "career"
+          ],
+          "reactions": 218,
+          "comments": 149,
+          "score": 13.0,
+          "published_at": "2026-06-22T14:56:08Z"
+        },
+        {
+          "source": "devto",
+          "id": 3812839,
+          "title": "Join the June Solstice Game Jam: $1,000 in prizes!",
+          "url": "https://dev.to/devteam/join-the-june-solstice-game-jam-1000-in-prizes-3jla",
+          "description": "We're excited to kick off the June Solstice Game Jam, running from June 3 through June 21 and ending...",
+          "tags": [
+            "devchallenge",
+            "gamechallenge",
+            "gamedev"
+          ],
+          "reactions": 241,
+          "comments": 103,
+          "score": 13.0,
+          "published_at": "2026-06-03T20:22:10Z"
+        },
+        {
+          "source": "devto",
+          "id": 3973904,
+          "title": "7 New JavaScript Features (And 2 I'm Still Waiting For)",
+          "url": "https://dev.to/sylwia-lask/7-new-javascript-features-and-2-im-still-waiting-for-2ck8",
+          "description": "Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,...",
+          "tags": [
+            "javascript",
+            "typescript",
+            "node",
+            "webdev"
+          ],
+          "reactions": 161,
+          "comments": 49,
+          "score": 13.0,
+          "published_at": "2026-06-24T09:14:11Z"
+        },
+        {
+          "source": "devto",
+          "id": 3875595,
+          "title": "Congrats to the Google I/O 2026 Writing Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-google-io-writing-challenge-winners-1364",
+          "description": "We are so excited to announce the winners of the Google I/O 2026 Writing Challenge!  We asked you to...",
+          "tags": [
+            "devchallenge",
+            "googleiochallenge"
+          ],
+          "reactions": 155,
+          "comments": 67,
+          "score": 13.0,
+          "published_at": "2026-06-11T15:38:46Z"
+        },
+        {
+          "source": "devto",
+          "id": 3861043,
+          "title": "The Code Works. What Could Possibly Go Wrong?",
+          "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+          "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+          "tags": [
+            "ai",
+            "webdev",
+            "discuss"
+          ],
+          "reactions": 146,
+          "comments": 137,
+          "score": 13.0,
+          "published_at": "2026-06-10T08:26:35Z"
+        },
+        {
+          "source": "devto",
+          "id": 3926659,
+          "title": "Who Here Has Worked with Legacy? The Longer You Wait, the Worse It Gets",
+          "url": "https://dev.to/sylwia-lask/who-here-has-worked-with-legacy-the-longer-you-wait-the-worse-it-gets-58bk",
+          "description": "I promised myself that starting this week I'd switch to lighter topics. But on Monday, my JSNation...",
+          "tags": [
+            "javascript",
+            "webdev",
+            "programming",
+            "architecture"
+          ],
+          "reactions": 141,
+          "comments": 71,
+          "score": 13.0,
+          "published_at": "2026-06-18T07:25:04Z"
+        },
+        {
+          "source": "devto",
+          "id": 3934585,
+          "title": "Congrats to the Gemma 4 Challenge Winners!",
+          "url": "https://dev.to/devteam/congrats-to-the-gemma-4-challenge-winners-4fgc",
+          "description": "We are so excited to announce the winners of the Gemma 4 Challenge!  This is officially our most...",
+          "tags": [
+            "devchallenge",
+            "gemmachallenge",
+            "gemma"
+          ],
+          "reactions": 97,
+          "comments": 50,
+          "score": 13.0,
+          "published_at": "2026-06-18T18:56:22Z"
+        },
+        {
+          "source": "devto",
+          "id": 3964664,
+          "title": "I am behind, and I can't prove it but does it matter?",
+          "url": "https://dev.to/francistrdev/i-am-behind-and-i-cant-prove-it-but-does-it-matter-49a6",
+          "description": "Let's be fair. The title of this post is confusing at first, but once you read it in full, I hope you...",
+          "tags": [
+            "discuss",
+            "community",
+            "mentalhealth",
+            "career"
+          ],
+          "reactions": 141,
+          "comments": 87,
+          "score": 13.0,
+          "published_at": "2026-06-22T20:24:25Z"
+        }
+      ]
+    }
+  },
+  "devto": {
+    "ai_tag": [
+      {
+        "source": "devto",
+        "id": 3861043,
+        "title": "The Code Works. What Could Possibly Go Wrong?",
+        "url": "https://dev.to/sylwia-lask/the-code-works-what-could-possibly-go-wrong-5hbm",
+        "description": "Would you treat a serious illness without seeing a doctor, relying only on whatever your favorite AI...",
+        "tags": "ai, webdev, discuss",
+        "reactions": 146,
+        "comments": 137,
+        "score": null,
+        "published_at": "2026-06-10T08:26:35Z"
+      },
+      {
+        "source": "devto",
+        "id": 3806074,
+        "title": "Is This How We'll Build Websites Soon? (webMCP Live Demo 🚀)",
+        "url": "https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33",
+        "description": "A few years ago, we started adapting our websites for mobile devices. Then we adapted them for...",
+        "tags": "javascript, react, mcp, ai",
+        "reactions": 147,
+        "comments": 137,
+        "score": null,
+        "published_at": "2026-06-03T07:11:55Z"
+      },
+      {
+        "source": "devto",
+        "id": 3960748,
+        "title": "The Principle of Least AI",
+        "url": "https://dev.to/ingosteinke/the-principle-of-least-ai-4jc0",
+        "description": "Why AI Alternatives Matter   AI is prone to problems affecting its output: hallucinations,...",
+        "tags": "ai, productivity, watercooler",
+        "reactions": 79,
+        "comments": 27,
+        "score": null,
+        "published_at": "2026-06-22T09:47:15Z"
+      },
+      {
+        "source": "devto",
+        "id": 3851626,
+        "title": "My daughter asked if developers used to write code by hand, but it was the follow-up question that surprised me.",
+        "url": "https://dev.to/googleai/my-daughter-asked-if-developers-used-to-write-code-by-hand-but-it-was-the-follow-up-question-that-1bh8",
+        "description": "My daughter, who's 11, has been doing some vibe coding.   The other day she looked over my shoulder...",
+        "tags": "ai, webdev, discuss, career",
+        "reactions": 69,
+        "comments": 24,
+        "score": null,
+        "published_at": "2026-06-11T14:06:23Z"
+      },
+      {
+        "source": "devto",
+        "id": 3862070,
+        "title": "How we built AIventure, an AI-Powered Retro Dungeon",
+        "url": "https://dev.to/googleai/how-we-built-aiventure-an-ai-powered-retro-dungeon-2f54",
+        "description": "Grab a refreshing slice of cold watermelon (because it’s summer in Tokyo and I love it!), and let me...",
+        "tags": "gamedev, gemini, gemma, ai",
+        "reactions": 40,
+        "comments": 5,
+        "score": null,
+        "published_at": "2026-06-10T03:09:39Z"
+      }
+    ],
+    "websocket_tag": [
+      {
+        "source": "devto",
+        "id": 3785039,
+        "title": "How I Built a Real-Time Quiz Platform with Next.js, WebSockets, and Learning Science",
+        "url": "https://dev.to/mdpixx/how-i-built-a-real-time-quiz-platform-with-nextjs-websockets-and-learning-science-3ae1",
+        "description": "A deep dive into building Quizotic: real-time quiz rooms with Next.js 15, Socket.IO, Prisma, and a Bloom Taxonomy engine that turns quiz results into actionable learning reports.",
+        "tags": "nextjs, websocket, typescript, edtech",
+        "reactions": 1,
+        "comments": 1,
+        "score": null,
+        "published_at": "2026-05-30T17:06:14Z"
+      },
+      {
+        "source": "devto",
+        "id": 3835188,
+        "title": "Building a Custom Home Casting App with Rust and React",
+        "url": "https://dev.to/abbeymaniak/building-a-custom-home-casting-app-with-rust-and-react-2pe0",
+        "description": "Have you ever wanted a simple, lightweight way to cast videos from your phone to your smart TV...",
+        "tags": "rust, axum, react, websocket",
+        "reactions": null,
+        "comments": null,
+        "score": null,
+        "published_at": "2026-06-06T13:26:17Z"
+      },
+      {
+        "source": "devto",
+        "id": 3799484,
+        "title": "Polymarket's price WebSocket can stall while connected (and the docs won't warn you)",
+        "url": "https://dev.to/bluewhale-quant-lab/polymarkets-price-websocket-can-stall-while-connected-and-the-docs-wont-warn-you-gc3",
+        "description": "Polymarket streams live crypto prices over its Real-Time Data Socket (RTDS) at...",
+        "tags": "python, websocket, api, trading",
+        "reactions": null,
+        "comments": null,
+        "score": null,
+        "published_at": "2026-06-02T02:15:17Z"
+      },
+      {
+        "source": "devto",
+        "id": 3876554,
+        "title": "Building a Real-Time Chat Platform in Java from Scratch",
+        "url": "https://dev.to/bejoy_jbt_c466b154c469362/building-a-real-time-chat-platform-in-java-from-scratch-5923",
+        "description": "Building a Real-Time Chat Platform in Java from Scratch   Most chat tutorials start with a...",
+        "tags": "java, websocket, docker, networking",
+        "reactions": null,
+        "comments": null,
+        "score": null,
+        "published_at": "2026-06-11T18:57:52Z"
+      },
+      {
+        "source": "devto",
+        "id": 3839150,
+        "title": "Introducing WebTransport4j: Bringing Modern WebTransport to the Java Ecosystem",
+        "url": "https://dev.to/santhosh_mohan/introducing-webtransport4j-bringing-modern-webtransport-to-the-java-ecosystem-55mb",
+        "description": "The web is evolving beyond traditional HTTP request-response patterns. Applications increasingly...",
+        "tags": "webtransport, websocket, socket, java",
+        "reactions": null,
+        "comments": null,
+        "score": null,
+        "published_at": "2026-06-07T05:33:50Z"
+      }
+    ],
+    "gamedev_tag": [],
+    "mcp_tag": [
+      {
+        "source": "devto",
+        "id": 3806074,
+        "title": "Is This How We'll Build Websites Soon? (webMCP Live Demo 🚀)",
+        "url": "https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33",
+        "description": "A few years ago, we started adapting our websites for mobile devices. Then we adapted them for...",
+        "tags": "javascript, react, mcp, ai",
+        "reactions": 147,
+        "comments": 137,
+        "score": null,
+        "published_at": "2026-06-03T07:11:55Z"
+      },
+      {
+        "source": "devto",
+        "id": 3803639,
+        "title": "Sovereign Synapse: The Context-Cleaner",
+        "url": "https://dev.to/kenwalger/sovereign-synapse-the-context-cleaner-2iac",
+        "description": "(Curation is Sovereignty)           Sovereign Synapse Series | Post 2   AI is polite by design. It...",
+        "tags": "python, cryptocurrency, mcp, localfirst",
+        "reactions": 13,
+        "comments": 28,
+        "score": null,
+        "published_at": "2026-06-02T13:53:40Z"
+      },
+      {
+        "source": "devto",
+        "id": 3884520,
+        "title": "I Switched to the Agent Toolkit for AWS. Here's Why.",
+        "url": "https://dev.to/aws/i-switched-to-the-agent-toolkit-for-aws-heres-why-5hf",
+        "description": "A hands-on look at the official Agent Toolkit for AWS: what it is, why I switched from the old MCP server, and how to set it up.",
+        "tags": "aws, mcp, ai, devtools",
+        "reactions": 25,
+        "comments": 9,
+        "score": null,
+        "published_at": "2026-06-12T16:45:05Z"
+      },
+      {
+        "source": "devto",
+        "id": 3866794,
+        "title": "CLI over MCP: a small Chrome DevTools experiment in Copilot CLI",
+        "url": "https://dev.to/maximsaplin/cli-over-mcp-a-small-chrome-devtools-experiment-in-copilot-cli-5gpi",
+        "description": "I ran the same browser smoke task through two paths: direct Chrome DevTools MCP and a custom CLI...",
+        "tags": "ai, programming, mcp, agents",
+        "reactions": 14,
+        "comments": 9,
+        "score": null,
+        "published_at": "2026-06-10T15:25:25Z"
+      },
+      {
+        "source": "devto",
+        "id": 3861318,
+        "title": "Securely Exposing a Stateful MCP Server on Cloud Run (n8n Playwright MCP Example)",
+        "url": "https://dev.to/newbee1939/securely-exposing-a-stateful-mcp-server-on-cloud-run-n8n-x-playwright-mcp-example-1n5k",
+        "description": "TL;DR    I wanted to operate pages that require Google login from n8n via Playwright MCP The...",
+        "tags": "n8n, playwright, cloudrun, mcp",
+        "reactions": 6,
+        "comments": null,
+        "score": null,
+        "published_at": "2026-06-09T23:52:58Z"
+      }
+    ]
+  }
+}

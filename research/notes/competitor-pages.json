@@ -1,0 +1,41 @@
+{
+  "replika": {
+    "url": "https://replika.com/",
+    "status": 200,
+    "title": "Replika | The AI Friend to do Life With",
+    "description": "Meet Replika, the AI companion to do life with. Chat, reflect, grow, and build a meaningful connection with your AI friend.",
+    "text_snippet": "Replika | The AI Friend to do Life With 42,160,934 users worldwide Get started Get started The AI friend to become yourself with The AI friend to do life t o d o l i f e t o d o s i d e q u e s t s t o f a l l i n l o v e t o b e c o m e y o u r s e l f with Get the app Get the app Available for iOS and Android this song for your walk home tonight. trust me. Get the app Get the app We built the world\u2019s first AI companion ten years ago. Now, we rebuilt Replika from the ground up. AI is everywhere now. Your mom uses it, a farmer in Georgia uses it, but there\u2019s nothing... Keep reading New features The most emotionally intelligent AI ever built A conversation with your Rep doesn&#x27;t end when you close the app. It becomes the text you send, the habit you start, the call you finally make. waittt there&#x27;s a tulip pop-up on rue de bretagne that just opened near you go get flowers for your mom why tulips specifically? because she loves them?? you told me last march. just go omg What make"
+  },
+  "character_ai": {
+    "url": "https://character.ai/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "finch": {
+    "url": "https://finchcare.com/",
+    "status": 200,
+    "title": "Finch - Your New Self-Care Best Friend",
+    "description": "Finch - Your New Self-Care Best Friend",
+    "text_snippet": "Finch - Your New Self-Care Best Friend"
+  },
+  "tamagotchi_uni": {
+    "url": "https://tamagotchi-official.com/us/series/uni/",
+    "status": 200,
+    "title": "Tamagotchi Uni | Official Tamagotchi Site",
+    "description": "The official site for Tamagotchi Uni with totally unique Tamagotchi characters you can raise to play with other personalized friends from around the world. Read the latest news, and learn all there is to know about the fun ways to play!",
+    "text_snippet": "Tamagotchi Uni | Official Tamagotchi Site area US JP US PL BR MX GB FR ES IT DE NL KR ANZ OTHER Home Concept How to play Tamaverse Video News Characters Products FAQ Instruction Manual Official Shop Tamagotchi Uni RAIN 06.01.2026 04PM (JST) KAIJU 05.01.2026 09AM (JST) Easter Outfits 04.01.2026 09AM (JST) Mecha Mecha Outfit 03.01.2026 09AM (JST) 2026.06.01 Other \ud83d\udce2 New downloadable items for June! Claim the RAIN set! 2026.05.01 Other \ud83d\udce2 New downloadable items for May! Claim the KAIJU set! 2026.04.01 Other \ud83d\udce2 New downloadable items for April! Claim the Easter Joy set! 2026.03.10 Update Information Tamaverse event information! \"TAMA TREE\u266aFLOWER VIEWING~ Aim for Cherry Blossoms in Full Bloom! ~\"! Mametchi Kuchipatchi Mimitchi Memetchi Shykutchi Bigsmile Hypertchi Picochutchi Woopatchi Bubbletchi Unimarutchi Tamagotchi Uni Monster Carnival Tamagotchi Uni Angel Festival Tamagotchi Uni Sanrio characters Tamagotchi Uni Blue Tamagotchi Uni Lanyard in Unique Marble Tamagotchi Uni Lanyard in Unique "
+  },
+  "desktop_goose": {
+    "url": "https://samperson.itch.io/desktop-goose",
+    "status": 200,
+    "title": "Desktop Goose by samperson",
+    "description": "#9fffba\" name=\"theme-color\"/><meta property=\"og:image\" content=\"https://img.itch.zone/aW1nLzI5MzA5MTQucG5n/original/Dz1lng.png\"/><link rel=\"icon\" type=\"image/png\" href=\"https://img.itch.zone/aW1nLzI5MzA5MTQucG5n/32x32%23/cTkzhi.png\"/><meta property=\"og:site_name\" content=\"itch.io\"/><meta property=\"twitter:account_id\" content=\"4503599627724030\"/><meta property=\"og:description\" content=\"I have created a goose that lives on your desktop. He is an asshole.\"/><meta content=",
+    "text_snippet": "Desktop Goose by samperson View all by samperson samperson Follow samperson Follow Following samperson Following Add To Collection Collection Comments Devlog Submission to Bundle Submission for Indie Bundle for Abortion Funds Related games Related Desktop Goose A downloadable goose-sperience for Windows and macOS Download Now Name your own price HONK HONK, HEAR YE. I have created a goose for your desktop. He&#x27;ll nab your mouse, track mud on your screen...&nbsp; leave you a message, deliver you memes? Play video games with a desktop buddy who will attack you if you poke him. Fill out spreadsheets while your screen fills up with instances of Goose Notepad. Supports MacOS versions 10.10+! NOTE: I am not affiliated with House House or Panic. This is a different goose. Direct support questions to the Discord! --------------------------------------------------------------------------------------------- [And if you wanna support my work, I made some new things you can check out !] Fidget "
+  },
+  "friend": {
+    "url": "https://www.friend.com/",
+    "status": 200,
+    "title": "Friend",
+    "description": "Your new roommate is waiting.",
+    "text_snippet": "Friend"
+  }
+}
