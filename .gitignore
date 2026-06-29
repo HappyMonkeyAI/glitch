@@ -1,0 +1,14 @@
+.env
+*.db
+*.db-*
+data/
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+dist/
+build/
+*.mp3
+*.wav
+*.webm
+*.mp4
