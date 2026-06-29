@@ -52,6 +52,7 @@
 
     .mic-toggle,
     .music-toggle,
+    .camera-toggle,
     .voice-toggle,
     .settings-toggle {
       position: fixed;
@@ -74,6 +75,7 @@
 
     .mic-toggle:hover,
     .music-toggle:hover,
+    .camera-toggle:hover,
     .voice-toggle:hover,
     .settings-toggle:hover {
       transform: translateY(-1px) scale(1.04);
@@ -85,6 +87,10 @@
 
     .music-toggle {
       left: 5rem;
+    }
+
+    .camera-toggle {
+      left: 9rem;
     }
 
     .voice-toggle {
@@ -105,6 +111,12 @@
       background: #d500f9;
       color: #fff;
       border-color: #d500f9;
+    }
+
+    .camera-toggle.camera-on {
+      background: #ffd600;
+      color: #031307;
+      border-color: #ffd600;
     }
 
     .voice-toggle.voice-on {
@@ -312,6 +324,26 @@
       transform: scale(1.05);
       opacity: 0.85;
     }
+
+    .footer {
+      position: fixed;
+      bottom: 0.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.45);
+      text-decoration: none;
+      transition: color 180ms ease, text-shadow 180ms ease;
+    }
+
+    .footer a:hover {
+      color: rgba(255, 255, 255, 0.85);
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
+    }
   </style>
 </head>
 
@@ -321,6 +353,9 @@
   </button>
   <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Play background music">
     <i class="fa-solid fa-music" aria-hidden="true"></i>
+  </button>
+  <button id="cameraToggle" class="camera-toggle" type="button" aria-pressed="false" title="enable motion detection">
+    <i class="fa-solid fa-video-slash" aria-hidden="true"></i>
   </button>
   <audio id="bgMusic" src="/glitch.mp3" loop></audio>
   <button id="voiceToggle" class="voice-toggle" type="button" aria-pressed="false" title="enable voice">
@@ -365,6 +400,9 @@
     </form>
     <section id="log" class="log"></section>
   </main>
+  <footer class="footer">
+    <a href="https://github.com/sponsors/HappyMonkeyAI" target="_blank" rel="noopener">Sponsor us on GitHub</a>
+  </footer>
   <script>
     const face = document.querySelector('#face');
     const mood = document.querySelector('#mood');
@@ -381,6 +419,7 @@
     const nameInput = document.querySelector('#nameInput');
     const musicToggle = document.querySelector('#musicToggle');
     const bgMusic = document.querySelector('#bgMusic');
+    const cameraToggle = document.querySelector('#cameraToggle');
     const RANDOM_NAMES = [
       "GLITCH", "GIZMO", "SPARK", "SCRAP", "RUSTY", "GREMLIN",
       "PEEVE", "WIDGET", "DONGLE", "MOGWAI", "GOBLIN", "SOCKET",
@@ -388,9 +427,28 @@
     ];
     let voiceEnabled = false;
     let musicEnabled = false;
+    let cameraEnabled = false;
     let isUserSpeaking = false;
     let isPetSpeaking = false;
     let userSpeechTimeout;
+
+    let videoEl = null;
+    let motionCanvas = null;
+    let motionCtx = null;
+    let previousFrame = null;
+    let motionInterval = null;
+    let motionReactionCooldown = false;
+    const motionThreshold = 18;
+
+    let idleTimer = null;
+    const IDLE_ANIMATIONS = [
+      { name: 'blink', face: '[-._.-]', blip: () => playBlip(700, 0.18), duration: 700 },
+      { name: 'wink-left', face: '[~._.-]', blip: () => playBlip(950, 0.14), duration: 600 },
+      { name: 'wink-right', face: '[-._.~]', blip: () => playBlip(950, 0.14), duration: 600 },
+      { name: 'look-left', face: '[<._.<]', blip: () => playBlip(850, 0.10), duration: 1000 },
+      { name: 'look-right', face: '[>._.>]', blip: () => playBlip(850, 0.10), duration: 1000 },
+      { name: 'blep', face: '[:P___]', blip: () => playBlip(300, 0.22), duration: 800 }
+    ];
 
     const playBlip = (frequency = 800, duration = 0.15, type = 'square') => {
       try {
@@ -436,6 +494,50 @@
       }
     };
 
+    const computeMotion = (prevData, currData) => {
+      let diffSum = 0;
+      const len = currData.length;
+      for (let i = 0; i < len; i += 4) {
+        diffSum += Math.abs(currData[i] - prevData[i]);       // R
+        diffSum += Math.abs(currData[i+1] - prevData[i+1]);   // G
+        diffSum += Math.abs(currData[i+2] - prevData[i+2]);   // B
+      }
+      return (diffSum / ((len / 4) * 3));
+    };
+
+    const onMotionDetected = () => {
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ type: 'motion_detected' }));
+      }
+      if (!motionReactionCooldown) {
+        addLog("SYSTEM: Motion detected!");
+        playFaceInteraction('blink');
+        motionReactionCooldown = true;
+        setTimeout(() => { motionReactionCooldown = false; }, 2500);
+      }
+    };
+
+    const setupMotionDetection = () => {
+      motionCanvas = document.createElement('canvas');
+      motionCanvas.width = 160;
+      motionCanvas.height = 120;
+      motionCtx = motionCanvas.getContext('2d');
+      previousFrame = null;
+
+      motionInterval = setInterval(() => {
+        if (!videoEl || !videoEl.videoWidth) return;
+        motionCtx.drawImage(videoEl, 0, 0, motionCanvas.width, motionCanvas.height);
+        const currentFrame = motionCtx.getImageData(0, 0, motionCanvas.width, motionCanvas.height);
+        if (previousFrame) {
+          const motionLevel = computeMotion(previousFrame.data, currentFrame.data);
+          if (motionLevel > motionThreshold) {
+            onMotionDetected();
+          }
+        }
+        previousFrame = currentFrame;
+      }, 300);
+    };
+
     const setPetName = (newName) => {
       const trimmed = newName.trim() || "GLITCH";
       petName.textContent = trimmed;
@@ -445,7 +547,36 @@
     };
     let voices = [];
     let currentFace = face.textContent;
-    let faceReturnTimer;
+    let faceReturnTimer = null;
+
+    const showTransientFace = (faceStr, duration) => {
+      clearTimeout(faceReturnTimer);
+      face.textContent = faceStr;
+      faceReturnTimer = setTimeout(() => {
+        faceReturnTimer = null;
+        face.textContent = currentFace;
+      }, duration);
+    };
+
+    const scheduleNextIdle = () => {
+      clearTimeout(idleTimer);
+      const delay = 4000 + Math.random() * 8000; // 4 to 12 seconds
+      idleTimer = setTimeout(() => {
+        const modalOpen = settingsModal.classList.contains('open');
+        if (!modalOpen && !isPetSpeaking && !isUserSpeaking) {
+          const anim = IDLE_ANIMATIONS[Math.floor(Math.random() * IDLE_ANIMATIONS.length)];
+          anim.blip();
+          showTransientFace(anim.face, anim.duration);
+        }
+        scheduleNextIdle();
+      }, delay);
+    };
+
+    input.addEventListener('input', () => {
+      scheduleNextIdle();
+    });
+
+    scheduleNextIdle();
     let micEnabled = false;
     let recognition;
     let recognitionRestartTimer;
@@ -595,6 +726,48 @@
       }
     });
 
+    cameraToggle.addEventListener('click', () => {
+      playBlip(1000, 0.08);
+      cameraEnabled = !cameraEnabled;
+      cameraToggle.classList.toggle('camera-on', cameraEnabled);
+      cameraToggle.setAttribute('aria-pressed', cameraEnabled ? 'true' : 'false');
+      cameraToggle.title = cameraEnabled ? 'disable motion detection' : 'enable motion detection';
+      cameraToggle.innerHTML = cameraEnabled
+        ? '<i class="fa-solid fa-video" aria-hidden="true"></i>'
+        : '<i class="fa-solid fa-video-slash" aria-hidden="true"></i>';
+
+      if (cameraEnabled) {
+        if (!videoEl) {
+          videoEl = document.createElement('video');
+          videoEl.autoplay = true;
+          videoEl.playsInline = true;
+          videoEl.style.display = 'none';
+          document.body.appendChild(videoEl);
+        }
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+          .then(stream => {
+            videoEl.srcObject = stream;
+            setupMotionDetection();
+            addLog("SYSTEM: Motion detection active");
+          })
+          .catch(err => {
+            console.error("Camera access failed", err);
+            addLog("SYSTEM: Camera blocked or unavailable");
+            cameraEnabled = false;
+            cameraToggle.classList.remove('camera-on');
+            cameraToggle.innerHTML = '<i class="fa-solid fa-video-slash" aria-hidden="true"></i>';
+          });
+      } else {
+        clearInterval(motionInterval);
+        if (videoEl && videoEl.srcObject) {
+          videoEl.srcObject.getTracks().forEach(track => track.stop());
+          videoEl.srcObject = null;
+        }
+        addLog("SYSTEM: Motion detection disabled");
+      }
+    });
+
     voiceSelect.addEventListener('change', () => {
       localStorage.setItem('glitchVoice', voiceSelect.value);
     });
@@ -678,14 +851,11 @@
     };
     const playFaceInteraction = (kind) => {
       const action = transientFaceFor[kind] || transientFaceFor.kawaii;
-      clearTimeout(faceReturnTimer);
-      face.textContent = action.face;
       addLog(`TOUCH: ${action.label}`);
 
       playBlip(kind === 'tongue' ? 250 : kind === 'blink' ? 600 : 900, kind === 'tongue' ? 0.22 : kind === 'blink' ? 0.18 : 0.20, 'square');
-
       chirp(action.noise, kind === 'tongue' ? 1.35 : 1.15, kind === 'blink' ? 1.35 : 1.05);
-      faceReturnTimer = setTimeout(() => { face.textContent = currentFace; }, 750);
+      showTransientFace(action.face, 750);
     };
     document.querySelector('main').addEventListener('pointerdown', (event) => {
       if (event.target.closest('form, .log')) return;
@@ -770,7 +940,9 @@
         const s = msg.state;
         document.body.className = s.background;
         currentFace = s.face;
-        face.textContent = currentFace;
+        if (!faceReturnTimer) {
+          face.textContent = currentFace;
+        }
         mood.textContent = `${s.mood.toUpperCase()} / neglect: ${s.neglect_stage}`;
         for (const [key, el] of Object.entries(fields)) el.textContent = bar(s[key]);
       }

@@ -37,7 +37,10 @@ async def websocket_endpoint(websocket: WebSocket) -> None:
     try:
         while True:
             payload = await websocket.receive_json()
-            if payload.get("type") != "user_text":
+            payload_type = payload.get("type")
+            if payload_type == "motion_detected":
+                continue
+            if payload_type != "user_text":
                 await websocket.send_json({"type": "error", "message": "expected user_text"})
                 continue
 
