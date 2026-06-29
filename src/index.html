@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CHIP</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "Courier New", ui-monospace, SFMono-Regular, Menlo, monospace;
+      --bg: #00ff66;
+      --fg: #041006;
+      --panel: rgba(0, 0, 0, 0.18);
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--fg);
+      transition: background 180ms linear, color 180ms linear;
+    }
+    body.happy { --bg: #00ff66; --fg: #031307; }
+    body.cranky { --bg: #ff3333; --fg: #210000; }
+    body.sad { --bg: #1a1a2e; --fg: #c6d4ff; }
+    body.sleepy { --bg: #35284f; --fg: #ddd4ff; }
+    body.glitch { --bg: #050000; --fg: #ff2a2a; }
+    main { width: min(960px, calc(100vw - 32px)); text-align: center; }
+    .face {
+      font-size: clamp(4rem, 18vw, 13rem);
+      line-height: 1;
+      letter-spacing: -0.08em;
+      text-shadow: 0 0 18px currentColor;
+      margin-bottom: 1rem;
+      cursor: crosshair;
+      user-select: none;
+      touch-action: manipulation;
+    }
+    .status, .voice-controls, .log, form {
+      background: var(--panel);
+      border: 2px solid currentColor;
+      box-shadow: 8px 8px 0 currentColor;
+      padding: 1rem;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    .bars { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    .bar span { display: block; white-space: pre; }
+    form, .voice-controls { display: flex; gap: .75rem; align-items: center; }
+    input { flex: 1; font: inherit; padding: .75rem; border: 2px solid currentColor; background: transparent; color: currentColor; }
+    button, select { font: inherit; padding: .75rem 1rem; border: 2px solid currentColor; background: currentColor; color: var(--bg); cursor: pointer; }
+    select { flex: 1; background: transparent; color: currentColor; }
+    .log { min-height: 5rem; max-height: 12rem; overflow: auto; }
+  </style>
+</head>
+<body class="happy">
+  <main data-face>
+    <div id="face" class="face">[^._.^]</div>
+    <h1>CHIP</h1>
+    <p id="mood">booting tiny resentment engine...</p>
+    <section class="status">
+      <div class="bars">
+        <div class="bar">AFFECTION <span id="affection"></span></div>
+        <div class="bar">ENERGY <span id="energy"></span></div>
+        <div class="bar">HUNGER <span id="hunger"></span></div>
+        <div class="bar">ATTENTION DEBT <span id="attention"></span></div>
+      </div>
+    </section>
+    <form id="form">
+      <input id="input" autocomplete="off" placeholder="feed CHIP gossip, praise, snacks, or consequences" />
+      <button>send</button>
+    </form>
+    <section class="voice-controls" aria-label="voice controls">
+      <button id="voiceToggle" type="button">enable voice</button>
+      <select id="voiceSelect" aria-label="voice selection">
+        <option>loading browser voices...</option>
+      </select>
+    </section>
+    <section id="log" class="log"></section>
+  </main>
+  <script>
+    const face = document.querySelector('#face');
+    const mood = document.querySelector('#mood');
+    const log = document.querySelector('#log');
+    const form = document.querySelector('#form');
+    const input = document.querySelector('#input');
+    const voiceToggle = document.querySelector('#voiceToggle');
+    const voiceSelect = document.querySelector('#voiceSelect');
+    let voiceEnabled = false;
+    let voices = [];
+    let currentFace = face.textContent;
+    let faceReturnTimer;
+    const fields = {
+      affection: document.querySelector('#affection'),
+      energy: document.querySelector('#energy'),
+      hunger: document.querySelector('#hunger'),
+      attention_debt: document.querySelector('#attention'),
+    };
+    const bar = (n) => '█'.repeat(Math.round(n / 10)).padEnd(10, '░') + ` ${n}`;
+    const addLog = (line) => { log.innerHTML += `<div>${line}</div>`; log.scrollTop = log.scrollHeight; };
+ const isSpeechAvailable = () => 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+ const scoreVoice = (voice) => {
+   const name = voice.name.toLowerCase();
+   const lang = voice.lang.toLowerCase();
+   let score = 0;
+   if (lang.startsWith('en')) score += 10;
+   if (name.includes('microsoft')) score += 8;
+   if (name.includes('natural')) score += 6;
+   if (name.includes('aria') || name.includes('jenny') || name.includes('guy')) score += 3;
+   if (name.includes('google')) score += 2;
+   return score;
+ };
+ const loadVoices = () => {
+   if (!isSpeechAvailable()) {
+     voiceToggle.disabled = true;
+     voiceToggle.textContent = 'voice unavailable';
+     voiceSelect.innerHTML = '<option>browser has no speechSynthesis</option>';
+     return;
+   }
+   voices = speechSynthesis.getVoices().sort((a, b) => scoreVoice(b) - scoreVoice(a));
+   voiceSelect.innerHTML = '';
+   if (!voices.length) {
+     voiceSelect.innerHTML = '<option>waiting for voices...</option>';
+     return;
+   }
+   for (const voice of voices) {
+     const option = document.createElement('option');
+     option.value = voice.name;
+     option.textContent = `${voice.name} (${voice.lang})`;
+     voiceSelect.append(option);
+   }
+   voiceSelect.value = voices[0].name;
+ };
+ const speakChip = (msg) => {
+   if (!voiceEnabled || !isSpeechAvailable()) return;
+   const utterance = new SpeechSynthesisUtterance(msg.spoken_text || `${msg.vocal_noise}. ${msg.text}`);
+   const selected = voices.find((voice) => voice.name === voiceSelect.value);
+   if (selected) utterance.voice = selected;
+   utterance.pitch = msg.vocal_noise === 'grr-uwu' ? 0.65 : msg.vocal_noise === 'bzz-uwu' ? 1.35 : 1.0;
+   utterance.rate = msg.vocal_noise === 'zz-uwu' ? 0.72 : msg.vocal_noise === 'bzz-uwu' ? 1.18 : 0.95;
+   speechSynthesis.cancel();
+   speechSynthesis.speak(utterance);
+ };
+ loadVoices();
+ if (isSpeechAvailable()) speechSynthesis.addEventListener('voiceschanged', loadVoices);
+ voiceToggle.addEventListener('click', () => {
+   voiceEnabled = !voiceEnabled;
+   voiceToggle.textContent = voiceEnabled ? 'voice on' : 'enable voice';
+   if (voiceEnabled && isSpeechAvailable()) {
+     const chirp = new SpeechSynthesisUtterance('bzz-uwu');
+     const selected = voices.find((voice) => voice.name === voiceSelect.value);
+     if (selected) chirp.voice = selected;
+     chirp.pitch = 1.35;
+     chirp.rate = 1.1;
+     speechSynthesis.speak(chirp);
+   } else if (isSpeechAvailable()) {
+     speechSynthesis.cancel();
+   }
+ });
+ const transientFaceFor = {
+   blink: { face: '[-._.-]', noise: 'pip-uwu', label: 'blink' },
+   tongue: { face: '[:P___]', noise: 'blep-uwu', label: 'tongue poke' },
+   kawaii: { face: '(｡♥‿♥｡)', noise: 'kyu-uwu', label: 'kawaii cheek squish' },
+ };
+ const interactionForPoint = (clientX, clientY) => {
+   const rect = face.getBoundingClientRect();
+   const x = (clientX - rect.left) / rect.width;
+   const y = (clientY - rect.top) / rect.height;
+   if (x < 0 || x > 1 || y < 0 || y > 1) return 'kawaii';
+   const nearEyeRow = y >= 0.12 && y <= 0.46;
+   const nearLeftEye = x >= 0.16 && x <= 0.38;
+   const nearRightEye = x >= 0.62 && x <= 0.84;
+   if (nearEyeRow && (nearLeftEye || nearRightEye)) return 'blink';
+   if (x >= 0.34 && x <= 0.66 && y >= 0.42 && y <= 0.76) return 'tongue';
+   return 'kawaii';
+ };
+ const chirp = (text, pitch = 1.2, rate = 1.1) => {
+   if (!voiceEnabled || !isSpeechAvailable()) return;
+   const utterance = new SpeechSynthesisUtterance(text);
+   const selected = voices.find((voice) => voice.name === voiceSelect.value);
+   if (selected) utterance.voice = selected;
+   utterance.pitch = pitch;
+   utterance.rate = rate;
+   speechSynthesis.cancel();
+   speechSynthesis.speak(utterance);
+ };
+ const playFaceInteraction = (kind) => {
+   const action = transientFaceFor[kind] || transientFaceFor.kawaii;
+   clearTimeout(faceReturnTimer);
+   face.textContent = action.face;
+   addLog(`TOUCH: ${action.label}`);
+   chirp(action.noise, kind === 'tongue' ? 1.35 : 1.15, kind === 'blink' ? 1.35 : 1.05);
+   faceReturnTimer = setTimeout(() => { face.textContent = currentFace; }, 750);
+ };
+ document.querySelector('main').addEventListener('pointerdown', (event) => {
+   if (event.target.closest('form, .voice-controls, .log')) return;
+   playFaceInteraction(interactionForPoint(event.clientX, event.clientY));
+ });
+ const ws = new WebSocket(`${location.protocol === 'https:' ? 'wss' : 'ws'}://${location.host}/ws`);
+    ws.onmessage = (event) => {
+      const msg = JSON.parse(event.data);
+      if (msg.type === 'pet_update') {
+        const s = msg.state;
+        document.body.className = s.background;
+        currentFace = s.face;
+        face.textContent = currentFace;
+        mood.textContent = `${s.mood.toUpperCase()} / neglect: ${s.neglect_stage}`;
+        for (const [key, el] of Object.entries(fields)) el.textContent = bar(s[key]);
+      }
+      if (msg.type === 'response_text') {
+        addLog(`CHIP: <strong>${msg.vocal_noise}</strong> ${msg.text}`);
+        speakChip(msg);
+      }
+      if (msg.type === 'transcript') addLog(`YOU: ${msg.text}`);
+    };
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+      ws.send(JSON.stringify({ type: 'user_text', text }));
+      input.value = '';
+    });
+  </script>
+</body>
+</html>

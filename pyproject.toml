@@ -1,0 +1,21 @@
+[project]
+name = "chip"
+version = "0.1.0"
+description = "Low-fi voice-first cyber pet scaffold"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+  "python-dotenv",
+  "openai",
+  "deepgram-sdk",
+  "cartesia",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -35,6 +35,18 @@ Initial implementation should stay close to the reference stack:
 - `HappyMonkeyAI/voice-assistant`: low-latency streaming voice, FastAPI WebSocket gateway, Deepgram STT, Cartesia TTS, OpenAI-compatible LLM, SQLite WAL.
 - `HappyMonkeyAI/motion-aware-voice-chat-bot`: browser webcam motion detection, simple state machine, optional MCP/tool integration, browser STT/TTS fallback.
 
-## Quick start status
+## Quick start
 
-This repo is currently documentation-first. The next implementation slice is in `docs/plans/2026-06-29-chip-mvp.md`.
+The current scaffold runs a browser-first text loop: FastAPI serves the low-fi CHIP page, `/ws` accepts `user_text` messages, and the deterministic Pet State Engine emits `pet_update` plus short response events.
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python3 -m pytest -q
+uvicorn src.main:app --reload
+```
+
+Then open `http://127.0.0.1:8000/`.
+
+The voice path is intentionally not wired yet. The next slice is persistence, then Deepgram/Cartesia once the text mood loop feels fun.
