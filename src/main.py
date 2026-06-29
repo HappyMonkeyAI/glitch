@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Response, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse, HTMLResponse
 
 from .pet_state import PetState, apply_time_decay, handle_user_message
@@ -14,7 +14,10 @@ app = FastAPI(title="GLITCH", version="0.1.0")
 
 
 @app.get("/", response_class=HTMLResponse)
-def index() -> str:
+def index(response: Response) -> str:
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
     return (APP_DIR / "index.html").read_text(encoding="utf-8")
 
 
