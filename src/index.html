@@ -50,15 +50,31 @@
       --fg: #ff2a2a;
     }
 
+    .controls-left {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      display: flex;
+      gap: 0.75rem;
+      z-index: 10;
+    }
+
+    .controls-right {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 0.75rem;
+      z-index: 10;
+    }
+
     .mic-toggle,
     .music-toggle,
     .camera-toggle,
     .sponsor-toggle,
     .voice-toggle,
     .settings-toggle {
-      position: fixed;
-      top: 1rem;
-      z-index: 10;
       width: 3.25rem;
       height: 3.25rem;
       display: grid;
@@ -81,30 +97,6 @@
     .voice-toggle:hover,
     .settings-toggle:hover {
       transform: translateY(-1px) scale(1.04);
-    }
-
-    .mic-toggle {
-      left: 1rem;
-    }
-
-    .music-toggle {
-      left: 5rem;
-    }
-
-    .camera-toggle {
-      left: 9rem;
-    }
-
-    .sponsor-toggle {
-      right: 9rem;
-    }
-
-    .voice-toggle {
-      right: 1rem;
-    }
-
-    .settings-toggle {
-      right: 5rem;
     }
 
     .mic-toggle.listening {
@@ -163,8 +155,8 @@
     .log,
     form {
       background: var(--panel);
-      border: 2px solid currentColor;
-      box-shadow: 8px 8px 0 currentColor;
+      border: 2px solid var(--fg);
+      box-shadow: 8px 8px 0 var(--fg);
       padding: 1rem;
       margin-top: 1rem;
       text-align: left;
@@ -189,27 +181,29 @@
 
     input {
       flex: 1;
+      min-width: 0;
       font: inherit;
       padding: .75rem;
-      border: 2px solid currentColor;
+      border: 2px solid var(--fg);
       background: transparent;
-      color: currentColor;
+      color: var(--fg);
     }
 
     button,
     select {
       font: inherit;
       padding: .75rem 1rem;
-      border: 2px solid currentColor;
-      background: currentColor;
+      border: 2px solid var(--fg);
+      background: var(--fg);
       color: var(--bg);
       cursor: pointer;
+      flex-shrink: 0;
     }
 
     select {
       flex: 1;
       background: transparent;
-      color: currentColor;
+      color: var(--fg);
     }
 
     .log {
@@ -340,49 +334,56 @@
         font-size: clamp(6.5rem, 25vw, 13rem);
       }
 
+      .controls-left {
+        top: 0.5rem;
+        left: 0.5rem;
+        gap: 0.35rem;
+      }
+
+      .controls-right {
+        top: 0.5rem;
+        right: 0.5rem;
+        gap: 0.35rem;
+      }
+
       .mic-toggle,
       .music-toggle,
       .camera-toggle,
       .sponsor-toggle,
       .voice-toggle,
       .settings-toggle {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.5rem;
-        top: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
       }
-
-      .mic-toggle { left: 0.5rem; }
-      .music-toggle { left: calc(0.5rem + 14vw); }
-      .camera-toggle { left: calc(0.5rem + 28vw); }
-
-      .voice-toggle { right: 0.5rem; }
-      .settings-toggle { right: calc(0.5rem + 14vw); }
-      .sponsor-toggle { right: calc(0.5rem + 28vw); }
     }
   </style>
 </head>
 
 <body class="happy">
-  <button id="micToggle" class="mic-toggle" type="button" aria-pressed="false" title="Toggle always-listening mic">
-    <i class="fa-solid fa-microphone" aria-hidden="true"></i>
-  </button>
-  <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Play background music">
-    <i class="fa-solid fa-music" aria-hidden="true"></i>
-  </button>
-  <button id="cameraToggle" class="camera-toggle" type="button" aria-pressed="false" title="enable motion detection">
-    <i class="fa-solid fa-video-slash" aria-hidden="true"></i>
-  </button>
+  <div class="controls-left">
+    <button id="micToggle" class="mic-toggle" type="button" aria-pressed="false" title="Toggle always-listening mic">
+      <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+    </button>
+    <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false" title="Play background music">
+      <i class="fa-solid fa-music" aria-hidden="true"></i>
+    </button>
+    <button id="cameraToggle" class="camera-toggle" type="button" aria-pressed="false" title="enable motion detection">
+      <i class="fa-solid fa-video-slash" aria-hidden="true"></i>
+    </button>
+  </div>
   <audio id="bgMusic" src="/glitch.mp3" loop></audio>
-  <button id="voiceToggle" class="voice-toggle" type="button" aria-pressed="false" title="enable voice">
-    <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
-  </button>
-  <button id="settingsToggle" class="settings-toggle" type="button" title="Settings">
-    <i class="fa-solid fa-gear" aria-hidden="true"></i>
-  </button>
-  <button id="sponsorToggle" class="sponsor-toggle" type="button" title="Sponsor us on GitHub">
-    <i class="fa-brands fa-github" aria-hidden="true"></i>
-  </button>
+  <div class="controls-right">
+    <button id="voiceToggle" class="voice-toggle" type="button" aria-pressed="false" title="enable voice">
+      <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i>
+    </button>
+    <button id="settingsToggle" class="settings-toggle" type="button" title="Settings">
+      <i class="fa-solid fa-gear" aria-hidden="true"></i>
+    </button>
+    <button id="sponsorToggle" class="sponsor-toggle" type="button" title="Sponsor us on GitHub">
+      <i class="fa-brands fa-github" aria-hidden="true"></i>
+    </button>
+  </div>
 
   <div id="settingsModal" class="modal" aria-hidden="true">
     <div class="modal-content">
