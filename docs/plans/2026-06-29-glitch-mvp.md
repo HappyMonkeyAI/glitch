@@ -1,4 +1,4 @@
-# CHIP MVP Implementation Plan
+# GLITCH MVP Implementation Plan
 
 > **For Hermes:** Use subagent-driven-development skill to implement this plan task-by-task.
 
@@ -68,7 +68,7 @@ Run `pytest tests/test_storage.py -v` and manually inspect that WAL mode is enab
 
 ### Phase 3: Low-fi frontend
 
-**Objective:** Render CHIP as a big ASCII face with mood background.
+**Objective:** Render GLITCH as a big ASCII face with mood background.
 
 **Files:**
 - Modify: `src/index.html`
@@ -101,7 +101,7 @@ Run a manual browser test with real `DEEPGRAM_API_KEY`, `CARTESIA_API_KEY`, and 
 
 ### Phase 5: Personality prompt
 
-**Objective:** Make CHIP speak in short, sassy, non-anime lines conditioned on vitals.
+**Objective:** Make GLITCH speak in short, sassy, non-anime lines conditioned on vitals.
 
 **Files:**
 - Create: `src/personality.py`

@@ -1,5 +1,5 @@
 [project]
-name = "chip"
+name = "glitch"
 version = "0.1.0"
 description = "Low-fi voice-first cyber pet scaffold"
 requires-python = ">=3.10"

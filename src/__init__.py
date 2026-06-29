@@ -1,1 +1,1 @@
-"""CHIP cyber pet app package."""
+"""GLITCH cyber pet app package."""

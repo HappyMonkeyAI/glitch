@@ -3,19 +3,25 @@ from fastapi.testclient import TestClient
 from src.main import app
 
 
-def test_root_serves_chip_page():
+def test_root_serves_glitch_page():
     client = TestClient(app)
 
     response = client.get("/")
 
     assert response.status_code == 200
-    assert "CHIP" in response.text
+    assert "GLITCH" in response.text
     assert "data-face" in response.text
     assert "speechSynthesis" in response.text
     assert "enable voice" in response.text
     assert "pointerdown" in response.text
     assert "interactionForPoint" in response.text
     assert "kawaii" in response.text
+    assert "micToggle" in response.text
+    assert "webkitSpeechRecognition" in response.text
+    assert "continuous = true" in response.text
+    assert "font-awesome" in response.text
+    assert "fa-microphone" in response.text
+    assert "fa-volume-high" in response.text
 
 
 def test_websocket_text_turn_returns_pet_update_and_response_text():

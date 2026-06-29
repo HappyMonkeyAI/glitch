@@ -1,17 +1,17 @@
-# CHIP Cyber Pet Deep Research — Deep Dive
+# GLITCH Cyber Pet Deep Research — Deep Dive
 
 Date: 2026-06-29
 
 ## Scope and method
 
-Question: how should CHIP evolve from a voice-assistant pivot into a startup-shaped, viral, non-anime AI cyber pet?
+Question: how should GLITCH evolve from a voice-assistant pivot into a startup-shaped, viral, non-anime AI cyber pet?
 
 Sources used:
 
 - `article_research` MCP: `plan_article_research`, `search_articles`, `build_topic_brief` across dev.to, Hacker News Algolia, and RSS.
 - `devto` MCP: `search_by_tech` and `get_devto_article` for full dev.to bodies.
 - Direct fetched pages: Replika, Finch, Tamagotchi Uni, Desktop Goose, Friend.
-- Existing CHIP docs and reference repos.
+- Existing GLITCH docs and reference repos.
 
 Caveat: Hermes web search / Firecrawl was unavailable in this session, and the local deep-research graph path was not present. This report therefore uses MCP article sources plus direct page verification rather than broad web extraction.
 
@@ -25,15 +25,15 @@ Raw evidence files:
 
 ## 1. Technical lens
 
-The existing architecture is enough for the MVP. `voice-assistant` already provides the hard part: FastAPI WebSockets, Deepgram STT, Cartesia TTS, OpenAI-compatible LLM calls, SQLite WAL, and a browser audio UI. CHIP should not start by adding more infrastructure.
+The existing architecture is enough for the MVP. `voice-assistant` already provides the hard part: FastAPI WebSockets, Deepgram STT, Cartesia TTS, OpenAI-compatible LLM calls, SQLite WAL, and a browser audio UI. GLITCH should not start by adding more infrastructure.
 
 The new technical requirement is not “better AI”; it is a deterministic Pet State Engine. Mood, hunger, affection, energy, attention debt, and neglect stage should be state-machine outputs, not free-form LLM outputs. LLMs can classify tone or generate speech, but the state transition must be testable.
 
 MCP findings:
 
 - dev.to article `How we built AIventure, an AI-Powered Retro Dungeon` shows a relevant pattern: AI can be embedded into a retro web-game wrapper where the novelty is not a general chatbot but a small playable world.
-- dev.to WebSocket examples reinforce that real-time state feedback and live-room energy matter. For CHIP, that maps to immediate face/background changes before TTS finishes.
-- The `Polymarket's price WebSocket can stall while connected` hit is not product-relevant, but it is a useful engineering reminder: WebSockets need heartbeat/stall detection once CHIP uses long-lived voice streams.
+- dev.to WebSocket examples reinforce that real-time state feedback and live-room energy matter. For GLITCH, that maps to immediate face/background changes before TTS finishes.
+- The `Polymarket's price WebSocket can stall while connected` hit is not product-relevant, but it is a useful engineering reminder: WebSockets need heartbeat/stall detection once GLITCH uses long-lived voice streams.
 
 Technical implication: Phase order should be `state engine -> ASCII UI -> text loop -> persistence -> voice`, not `voice -> prompt -> UI`.
 
@@ -57,7 +57,7 @@ Avoid early monetization that fights the toy loop. Subscriptions only make sense
 
 ## 3. Historical lens
 
-CHIP sits between three precedents:
+GLITCH sits between three precedents:
 
 - Tamagotchi: durable care loop, neglect consequences, portable identity.
 - Desktop Goose: annoying/funny ambient presence that users share because behaviour is legible.
@@ -65,7 +65,7 @@ CHIP sits between three precedents:
 
 The historical lesson is that “neediness” works when it is bounded. Tamagotchi-style care loops are engaging because the rules are understandable. Desktop Goose-style annoyance works because the joke is immediate. AI companion intimacy can create retention, but it also drags the product into therapy/romance expectations.
 
-CHIP should borrow care and consequence, not therapeutic intimacy.
+GLITCH should borrow care and consequence, not therapeutic intimacy.
 
 ---
 
@@ -73,7 +73,7 @@ CHIP should borrow care and consequence, not therapeutic intimacy.
 
 The AI companion category is crowded. Replika’s page explicitly positions as an “AI friend” and claimed 42,160,934 users worldwide when fetched. Finch occupies a self-care pet lane. Character.ai is a broad character-chat platform, though its page returned 403 in this session. Friend positions around ambient companionship hardware (“Your new roommate is waiting”).
 
-CHIP’s best wedge is anti-positioning:
+GLITCH’s best wedge is anti-positioning:
 
 - Not AI girlfriend/boyfriend.
 - Not therapist.
@@ -91,7 +91,7 @@ Strategic priority: own a visual and behavioural meme before building a platform
 
 A red page with `(ಠ_ಠ)` saying “you came crawling back after six hours?” is more memorable than an elegant avatar saying “welcome back.” The low-fi constraint is a strategic asset: it reduces build time and makes clips legible on X/TikTok.
 
-The dev.to `agent-first approach to building products` article is indirectly relevant: it argues that agent-visible surfaces matter. CHIP can apply this by exposing a simple local MCP/API later, so agents or workflows can “feed” CHIP events. But that is v2; do not let agent integrations distract from the toy loop.
+The dev.to `agent-first approach to building products` article is indirectly relevant: it argues that agent-visible surfaces matter. GLITCH can apply this by exposing a simple local MCP/API later, so agents or workflows can “feed” GLITCH events. But that is v2; do not let agent integrations distract from the toy loop.
 
 ---
 
@@ -111,7 +111,7 @@ Jobs to be done:
 - “Let me show friends the weird thing my AI pet said.”
 - “I want an AI companion that is not romantic, therapeutic, or anime-coded.”
 
-The onboarding question should not be “tell me about yourself.” It should be “feed CHIP one interesting thing or accept consequences.”
+The onboarding question should not be “tell me about yourself.” It should be “feed GLITCH one interesting thing or accept consequences.”
 
 ---
 
@@ -120,11 +120,11 @@ The onboarding question should not be “tell me about yourself.” It should be
 Recommended MVP loop:
 
 1. Open page.
-2. CHIP loads persisted state and applies time decay.
+2. GLITCH loads persisted state and applies time decay.
 3. Face/background immediately reflects current state.
 4. User types or speaks one utterance.
 5. Pet State Engine updates vitals.
-6. CHIP replies in one short line.
+6. GLITCH replies in one short line.
 7. User can export a reaction card/clip.
 
 First state map:
@@ -145,7 +145,7 @@ The strongest objection: this could be a novelty that burns out after one sessio
 
 Countermeasures:
 
-- Give CHIP a daily “one interesting thing” ritual.
+- Give GLITCH a daily “one interesting thing” ritual.
 - Make neglect states visible without being emotionally manipulative.
 - Make users want to screenshot the state, not just read the response.
 - Add friend rescue links only after the base loop works.
@@ -187,7 +187,7 @@ Motion awareness is tempting, but webcam permission increases friction. Use brow
 
 ### Viral experiments
 
-1. “CHIP is mad at me” reaction card.
+1. “GLITCH is mad at me” reaction card.
 2. “Forgiveness link” after neglect.
 3. Daily judgement prompt.
 4. Streamer overlay once web loop is proven.

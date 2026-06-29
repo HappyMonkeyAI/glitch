@@ -1,4 +1,4 @@
-# CHIP Context
+# GLITCH Context
 
 ## Source-of-truth hierarchy
 
@@ -12,7 +12,7 @@ If docs and code conflict, inspect the code, update the docs, and add/adjust an 
 
 ## Product thesis
 
-CHIP is an anti-therapy cyber pet: a tiny, voice-enabled, emotionally reactive gremlin that users must entertain, feed with attention, and occasionally apologise to. It should feel like an indie web toy with founder-grade viral hooks, not a generic chatbot skin.
+GLITCH is an anti-therapy cyber pet: a tiny, voice-enabled, emotionally reactive gremlin that users must entertain, feed with attention, and occasionally apologise to. It should feel like an indie web toy with founder-grade viral hooks, not a generic chatbot skin.
 
 Non-goals:
 
@@ -72,7 +72,7 @@ Example faces:
 
 ## Personality rules
 
-CHIP is sassy, needy, and funny, but not abusive. It can roast behaviour, not identity.
+GLITCH is sassy, needy, and funny, but not abusive. It can roast behaviour, not identity.
 
 - Responses should usually be 1-2 sentences.
 - It can interrupt boring rambling once interruption support is safe.

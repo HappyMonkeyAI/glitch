@@ -1,4 +1,4 @@
-# Hermes Guide for CHIP
+# Hermes Guide for GLITCH
 
 ## Default behaviour
 
@@ -28,4 +28,4 @@ When code exists, prefer these gates:
 - `docs/adr/0001-product-identity.md`
 - `docs/adr/0002-voice-first-browser-mvp.md`
 - `docs/adr/0003-pet-state-and-persistence.md`
-- `docs/plans/2026-06-29-chip-mvp.md`
+- `docs/plans/2026-06-29-glitch-mvp.md`

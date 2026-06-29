@@ -45,7 +45,7 @@ def vocal_noise_for(state: PetState) -> str:
 
 
 def choose_response(state: PetState, message: str, include_noise: bool = False) -> str:
-    """Return a short deterministic CHIP line for the current scaffold."""
+    """Return a short deterministic GLITCH line for the current scaffold."""
     options = RESPONSES[state.mood]
     index = (len(message) + state.hunger + state.attention_debt) % len(options)
     response = options[index]

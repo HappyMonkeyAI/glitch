@@ -1,4 +1,4 @@
-# CHIP Cyber Pet Deep Research — Key Players
+# GLITCH Cyber Pet Deep Research — Key Players
 
 ## Direct / adjacent products
 
@@ -7,7 +7,7 @@
 - URL: https://replika.com/
 - Positioning verified in fetched page: “The AI Friend to do Life With”.
 - Page claimed 42,160,934 users worldwide when fetched.
-- Relevance: proves scale of AI companion demand, but also marks the emotional-friend lane CHIP should avoid.
+- Relevance: proves scale of AI companion demand, but also marks the emotional-friend lane GLITCH should avoid.
 
 ### Character.ai
 
@@ -19,7 +19,7 @@
 
 - URL: https://finchcare.com/
 - Fetched title/description: “Finch - Your New Self-Care Best Friend”.
-- Relevance: owns self-care pet language. CHIP should not copy self-care framing.
+- Relevance: owns self-care pet language. GLITCH should not copy self-care framing.
 
 ### Tamagotchi Uni / Bandai
 
@@ -37,7 +37,7 @@
 
 - URL: https://www.friend.com/
 - Fetched description: “Your new roommate is waiting.”
-- Relevance: ambient companion hardware direction. CHIP should defer hardware/always-on until the software toy loop works.
+- Relevance: ambient companion hardware direction. GLITCH should defer hardware/always-on until the software toy loop works.
 
 ## Practitioner / technical sources
 
@@ -49,12 +49,12 @@
 ### Real-time WebSocket app article
 
 - URL: https://dev.to/mdpixx/how-i-built-a-real-time-quiz-platform-with-nextjs-websockets-and-learning-science-3ae1
-- Relevance: real-time state feedback and live interaction loops; useful for CHIP UI and WebSocket structure.
+- Relevance: real-time state feedback and live interaction loops; useful for GLITCH UI and WebSocket structure.
 
 ### webMCP demo article
 
 - URL: https://dev.to/sylwia-lask/is-this-how-well-build-websites-soon-webmcp-live-demo--2e33
-- Relevance: future agent-readable web surfaces; possible v2 if CHIP exposes a tiny local tool/API for agents to interact with the pet.
+- Relevance: future agent-readable web surfaces; possible v2 if GLITCH exposes a tiny local tool/API for agents to interact with the pet.
 
 ### Agent-first product article
 

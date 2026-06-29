@@ -3,19 +3,24 @@ from __future__ import annotations
 from pathlib import Path
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 
 from .pet_state import PetState, apply_time_decay, handle_user_message
 from .responses import choose_response, vocal_noise_for
 
 APP_DIR = Path(__file__).resolve().parent
 
-app = FastAPI(title="CHIP", version="0.1.0")
+app = FastAPI(title="GLITCH", version="0.1.0")
 
 
 @app.get("/", response_class=HTMLResponse)
 def index() -> str:
     return (APP_DIR / "index.html").read_text(encoding="utf-8")
+
+
+@app.get("/glitch.mp3")
+def glitch_mp3() -> FileResponse:
+    return FileResponse(APP_DIR.parent / "glitch.mp3")
 
 
 @app.get("/healthz")

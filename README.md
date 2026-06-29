@@ -1,6 +1,6 @@
-# CHIP
+# Glitch Pet
 
-CHIP is a low-fi AI cyber pet you can talk to in the browser. It is not an anime companion and not a therapy bot. The product direction is a stark, funny, slightly needy digital gremlin with simple ASCII-style expressions, aggressive colour states, and voice-first interaction.
+Glitch is a low-fi AI cyber pet you can talk to in the browser. It is not an anime companion and not a therapy bot. The product direction is a stark, funny, slightly needy digital gremlin with simple ASCII-style expressions, aggressive colour states, and voice-first interaction.
 
 Working thesis: reuse the low-latency voice architecture from HappyMonkeyAI/voice-assistant, borrow optional motion-awareness ideas from HappyMonkeyAI/motion-aware-voice-chat-bot, and replace the business-intake layer with a persistent pet-vitals and mood engine.
 
@@ -9,7 +9,7 @@ Working thesis: reuse the low-latency voice architecture from HappyMonkeyAI/voic
 - Browser-first MVP: one page, one pet face, microphone controls, mood/vitals panel, transcript log.
 - Visual identity: terminal/pixel/cyberpet, simple emoji or ASCII face, full-page colour mood states.
 - Voice identity: short, sassy, needy, playful; never waifu/anime-coded and never soft corporate assistant.
-- Core loop: talk to CHIP, feed it attention or interesting updates, watch mood shift, return later to consequences.
+- Core loop: talk to GLITCH, feed it attention or interesting updates, watch mood shift, return later to consequences.
 - Viral loop: share short dramatic reaction clips or rescue/forgiveness links after neglect.
 
 ## Runtime assumptions
@@ -37,7 +37,7 @@ Initial implementation should stay close to the reference stack:
 
 ## Quick start
 
-The current scaffold runs a browser-first text loop: FastAPI serves the low-fi CHIP page, `/ws` accepts `user_text` messages, and the deterministic Pet State Engine emits `pet_update` plus short response events.
+The current scaffold runs a browser-first text loop: FastAPI serves the low-fi GLITCH page, `/ws` accepts `user_text` messages, and the deterministic Pet State Engine emits `pet_update` plus short response events.
 
 ```bash
 python3 -m venv .venv

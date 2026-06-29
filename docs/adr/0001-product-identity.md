@@ -10,7 +10,7 @@ The idea started from a voice-assistant stack that could be repurposed into an e
 
 ## Decision
 
-CHIP will use a low-fi, terminal/pixel, slightly hostile cyberpet identity:
+GLITCH will use a low-fi, terminal/pixel, slightly hostile cyberpet identity:
 
 - Simple ASCII/emoji face rather than anime art.
 - Mood as full-page colour and text expression.

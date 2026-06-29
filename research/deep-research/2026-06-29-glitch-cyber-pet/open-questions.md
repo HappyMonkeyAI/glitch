@@ -1,4 +1,4 @@
-# CHIP Cyber Pet Deep Research — Open Questions
+# GLITCH Cyber Pet Deep Research — Open Questions
 
 ## Product
 
@@ -8,7 +8,7 @@
 2. Is the first audience builders, streamers, or general AI companion users?
    - The MVP can serve builders first, but viral mechanics differ by audience.
 
-3. Does CHIP need voice on day one?
+3. Does GLITCH need voice on day one?
    - Current recommendation: text loop first, voice second. Needs validation.
 
 4. What daily ritual creates return behaviour without becoming annoying?

@@ -13,7 +13,7 @@ Two reference projects are available:
 
 ## Decision
 
-The first CHIP build will be a browser-first web app using the `voice-assistant` pipeline as the baseline. Motion/camera features remain optional v2 work.
+The first GLITCH build will be a browser-first web app using the `voice-assistant` pipeline as the baseline. Motion/camera features remain optional v2 work.
 
 ## Consequences
 

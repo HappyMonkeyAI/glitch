@@ -5,7 +5,7 @@
 - Stack/runtime: Python 3.12, FastAPI, browser webcam capture, pixel-difference motion detection, WebSocket chat, OpenAI-compatible vision model, browser STT/TTS, optional MCP tool integration.
 - Why it matters: Useful for later presence-aware pet behaviours and simple state-machine structure.
 - What to cherry-pick:
-  - Browser-side motion detection if CHIP becomes an ambient desktop/webcam pet.
+  - Browser-side motion detection if GLITCH becomes an ambient desktop/webcam pet.
   - `BotStateMachine` style timing transitions for greeting, nudge, and inactivity.
   - Optional MCP/tool pattern only if it directly improves pet play.
 - What to avoid:
